@@ -1,0 +1,124 @@
+.footer {
+  background-color: $colorBackgroundDark;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__items {
+  font-size: 17px;
+  line-height: 1.39;
+  color: $colorTextWhite;
+  font-family: 'Roboto';
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__box-one {
+  display: flex;
+  gap: 92px;
+}
+
+.footer-title {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+  color: $colorTextWhite;
+}
+
+.footer__field-label {
+  font-size: 36px;
+  line-height: 48px;
+  color: $colorTextWhite;
+  margin-bottom: 1px;
+}
+
+.footer-form__input {
+  padding: 13px 0px;
+  width: 293px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $colorTextWhite;
+
+  margin-right: 28px;
+  background-color: $colorBackgroundDark;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  color: $colorTextPlaceholder;
+}
+
+.footer__field-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: $colorTextWhite;
+  margin-bottom: 69px;
+}
+
+.logo {
+  padding-left: 175px;
+  margin-bottom: 60px;
+  display: block;
+}
+.logo__icon {
+  fill: $colorTextWhite;
+}
+.footer__gen-box {
+  padding-left: 175px;
+  display: flex;
+  margin-bottom: 52px;
+}
+
+.footer__box-two {
+  margin-left: 93px;
+}
+
+.footer__soc-set {
+  padding-left: 175px;
+  display: flex;
+  gap: 277px;
+}
+
+.social-media {
+  display: flex;
+  gap: 27px;
+}
+
+.social-media__link {
+  color: $colorTextWhite;
+  transition: color $baseTransition;
+  &:hover,
+  &:focus {
+    color: $colorButtonHover;
+  }
+}
+.social-media__icon {
+  fill: currentColor;
+}
+.footer-button {
+  font-size: 14px;
+  line-height: 1.22;
+
+  text-align: center;
+  background-color: $colorBackgroundDark;
+  border-radius: 0px;
+  height: 53px;
+  width: 191px;
+  text-transform: uppercase;
+  border: 1px solid $colorTextWhite;
+  color: $colorTextWhite;
+  text-align: center;
+  transition: background-color $baseTransition;
+  &:hover,
+  &:focus {
+    background-color: $colorButtonHover;
+  }
+}

@@ -1,0 +1,65 @@
+.smart__home {
+    max-width: 1440px;
+    padding: 167px 0 72px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: $colorTextWhite;
+
+    background-color: $colorBackgroundHero;
+    background-image: url('../img/door.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.smart__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 57px;
+}
+
+// .smart__item {
+// }
+
+.smart__icon {
+    fill: currentColor;
+    border: 2px solid $colorTextWhite;
+    border-radius: 33%;
+    width: 79px;
+    height: 79px;
+    &--current {
+        background-color: $colorBlack;
+    }
+}
+
+.section__title {
+    @include font(400, 50px, 1.2, '');
+    margin-bottom: 44px;
+}
+
+.section__text {
+    max-width: 734px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 118px;
+    @include font(400, 18px, 1.39, '');
+}
+
+.smart__btn {
+    width: 220px;
+    margin-bottom: 67px;
+}
+
+.smart__box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.smart__box-item {
+    width: 10px;
+    height: 10px;
+    background-color: $colorTextWhite;
+}

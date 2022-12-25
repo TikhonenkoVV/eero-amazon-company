@@ -1,0 +1,83 @@
+.promo {
+  padding: 110px 0 4px;
+  font-weight: 400;
+  background-color: $colorBackgroundPrimary;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin: 0 0 21px;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    color: $colorTextPrimary;
+  }
+
+  &__amazon-logo {
+    margin: 0 0 28px;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 0 122px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: $colorTextPrimary;
+    transition: color $baseTransition;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 5px;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $colorTextPrimary;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+      &::after {
+        border-bottom: 1px solid $colorAccent;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 44px;
+    max-width: 729px;
+    text-align: center;
+    font-size: 50px;
+    line-height: calc(60 / 50);
+    color: $colorTextPrimary;
+  }
+
+  &__text {
+    margin-bottom: 78px;
+    max-width: 736px;
+    text-align: center;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    color: $colorTextPrimary;
+  }
+
+  &__button {
+    padding: 17px 37px 21px;
+    background-color: $colorAccent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: calc(14 / 14);
+    letter-spacing: 0.11px;
+    color: $colorTextWhite;
+    transition: background-color $baseTransition;
+
+    &:hover,
+    &:focus {
+      background-color: $colorButtonHover;
+    }
+  }
+}

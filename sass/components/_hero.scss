@@ -1,0 +1,59 @@
+.hero {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 367px;
+    text-align: center;
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: $colorBackgroundHero;
+    color: $colorTextWhite;
+    overflow: hidden;
+}
+
+.hero__sticker {
+    position: absolute;
+    left: 50%;
+    bottom: -7%;
+    transform: translateX(-50%);
+}
+
+.hero__title {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.11;
+    margin-bottom: 24px;
+}
+
+.hero__caption {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.38;
+    margin-bottom: 16px;
+}
+
+.hero__btn {
+    width: 226px;
+    height: 51px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.11px;
+    text-transform: uppercase;
+    color: inherit;
+    background: none;
+    border: 1px solid $colorTextWhite;
+    cursor: pointer;
+    transition: background-color $baseTransition;
+    &:hover,
+    &:focus {
+        background-color: $colorButtonHover;
+    }
+}

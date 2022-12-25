@@ -1,0 +1,121 @@
+.configurator {
+    width: 100%;
+}
+
+.configurator__counter {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    margin-bottom: 37px;
+}
+
+.configurator__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 24px;
+    height: 24px;
+    &--current {
+        border: 1px solid $colorSquareGreen;
+    }
+    &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 1px;
+        background-color: $colorPrimaryGray;
+        right: -42px;
+        top: 50%;
+    }
+}
+
+.configurator__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    color: $colorTextWhite;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(23 / 14);
+    letter-spacing: 0.10998px;
+    background-color: $colorPrimaryGray;
+    &--current {
+        background-color: $colorSquareGreen;
+    }
+}
+
+// .configurator__box {
+//   padding-top: 250px;
+// }
+
+.configurator__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.configurator__caption {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+}
+
+.configurator__group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.configurator__img {
+    width: 387px;
+    margin: 0 auto 58px;
+}
+
+.configurator__label {
+    display: block;
+    order: 2;
+    padding: 16px 26px;
+    font-size: 21px;
+    line-height: calc(29 / 21);
+    color: rgba(64, 64, 64, 0.3);
+    background-color: $colorBackgroundPrimary;
+    border: 2px solid #c0c0c0;
+    transition: color $baseTransition, background-color $baseTransition;
+    &:hover,
+    &:focus,
+    &--current {
+        color: $colorTextWhite;
+        background-color: $colorButtonHover;
+    }
+}
+
+.configurator__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.configurator__btn {
+    display: block;
+    width: 220px;
+    padding: 17px 0 21px;
+    color: $colorTextWhite;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.11px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $colorPrimaryGray;
+    transition: background-color $baseTransition;
+    &:hover,
+    &:focus {
+        background-color: $colorButtonHover;
+    }
+}

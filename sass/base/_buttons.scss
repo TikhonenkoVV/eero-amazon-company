@@ -1,0 +1,14 @@
+.btn {
+  padding: 17px 0 21px;
+  background-color: $colorAccent;
+  border: none;
+  color: $colorTextWhite;
+  @include font(700, 14px, 1, '');
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color $baseTransition;
+  &:hover,
+  &:focus {
+    background-color: $colorButtonHover;
+  }
+}
