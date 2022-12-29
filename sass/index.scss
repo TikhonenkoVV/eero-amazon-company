@@ -2,8 +2,12 @@
 @import './base/normalise';
 @import './base/base';
 @import './utils/mixins';
-@import './base/buttons';
+@import './utils/animation';
+@import './components/buttons';
 @import './components/container';
+@import './components/header';
+@import './components/socials';
+@import './components/logo';
 @import './components/hero';
 @import './components/promo';
 @import './components/products';
@@ -13,3 +17,10 @@
 @import './components/configurator';
 @import './components/footer';
 @import './utils/vh';
+
+.footer,
+.products,
+.smart,
+.selection {
+    display: none;
+}

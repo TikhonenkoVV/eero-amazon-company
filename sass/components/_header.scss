@@ -1,0 +1,233 @@
+.header {
+    background-color: $colorBackgroundPrimary;
+    @include for-size(mobile-only) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.header::before {
+    display: none;
+    @include for-size(mobile-only) {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: $colorBackgroundPrimary;
+    }
+}
+
+.header__banner {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 6px 0;
+    text-align: center;
+    color: $colorTextWhite;
+    background-color: $colorBackgroundDark;
+    z-index: 3;
+    @include for-size(tablet) {
+        padding: 5px 0;
+    }
+}
+
+.header__banner-text {
+    @include font(400, 10px, 1.2, '');
+    @include for-size(tablet) {
+        @include font(400, 14px, 1.643, '');
+    }
+}
+
+.header__container {
+    display: flex;
+}
+
+.header__logo {
+    z-index: 3;
+    padding: 10px 0;
+    @include for-size(tablet) {
+        margin-right: 16px;
+        padding: 15px 4px;
+    }
+    @include for-size(desktop) {
+        margin-right: 154px;
+    }
+}
+
+.header__logo-icon {
+    width: 65px;
+    height: 30px;
+    fill: $colorBlack;
+    @include for-size(tablet) {
+        width: 107px;
+        height: 50px;
+    }
+}
+
+.header__navigation-wrapper {
+    background-color: $colorBackgroundPrimary;
+    @include for-size(mobile-only) {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(100% - 74px);
+        transform: translatey(-100%);
+        transition: transform $baseTransition;
+    }
+}
+
+.header__navigation-wrapper.is-open {
+    transform: translatex(0);
+}
+
+.header__navigation-container {
+    @include for-size(mobile-only) {
+        display: flex;
+        flex-direction: column;
+        width: 414px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 30px 15px;
+    }
+}
+
+.header__navigation {
+    @include for-size(mobile-only) {
+        margin-bottom: auto;
+    }
+}
+
+.header__nav {
+    @include for-size(tablet) {
+        display: flex;
+    }
+}
+
+.header__nav-item:not(:last-child) {
+    @include for-size(mobile-only) {
+        margin-bottom: 16px;
+    }
+}
+
+.header__nav-link {
+    color: inherit;
+    transition: color $baseTransition, background-color $baseTransition;
+    &:hover,
+    &:focus {
+        background-color: $colorBackgroundLightGray;
+        color: $colorAccent;
+    }
+    @include font(400, 36px, 1.2223, 0.11px);
+    @include for-size(tablet) {
+        display: block;
+        padding: 29px 20px;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include font(400, 18px, 1.2223, 0.11px);
+    }
+    @include for-size(desktop) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.header__socials {
+    display: none;
+    @include for-size(mobile-only) {
+        display: block;
+    }
+}
+
+.header__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    z-index: 3;
+}
+
+.header__btn-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 166px;
+    height: 100%;
+    margin-right: -15px;
+    padding: 0;
+    border: none;
+    color: $colorTextWhite;
+    text-transform: uppercase;
+    @include font(400, 14px, 1, 0.11px);
+    background-color: $colorAccent;
+    transition: background-color $baseTransition;
+    @include for-size(mobile-only) {
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        background: none;
+    }
+    &:hover,
+    &:focus {
+        background-color: $colorButtonHover;
+    }
+}
+
+.header__btn-cart-content {
+    @include for-size(mobile-only) {
+        display: none;
+    }
+}
+
+.header__btn-cart-icon {
+    fill: $colorTextWhite;
+    @include for-size(mobile-only) {
+        fill: $colorBlack;
+    }
+}
+
+.header__mobile-menu-open {
+    position: relative;
+    display: none;
+    @include for-size(mobile-only) {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.header__mobile-menu-open::before,
+.header__mobile-menu-open::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $colorBlack;
+}
+
+.header__mobile-menu-open::before {
+    top: 4px;
+}
+
+.header__mobile-menu-open::after {
+    bottom: 4px;
+}
+
+.header__btn-decor {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $colorBlack;
+}

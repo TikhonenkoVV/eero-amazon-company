@@ -1,0 +1,10 @@
+.btn {
+    @include font(400, 14px, 1, '');
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color $baseTransition;
+    &:hover,
+    &:focus {
+        background-color: $colorButtonHover;
+    }
+}

@@ -1,0 +1,12 @@
+.socials {
+    display: flex;
+    gap: 27px;
+}
+
+.social-link {
+    color: inherit;
+    transition: color $baseTransition;
+}
+.social-media__icon {
+    fill: currentColor;
+}

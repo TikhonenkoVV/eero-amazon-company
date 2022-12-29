@@ -11,36 +11,158 @@
 
 <body>
     <main>
-        <header>
-
+        <header class="header">
+            <div class="header__banner">
+                <p class="header__banner-text">Free 2-day shipping | 30-day money back guarantee</p>
+            </div>
+            <div class="container header__container">
+                <a class="logo header__logo" href="./index.html">
+                    <svg class="header__logo-icon">
+                        <use href="./img/icons.svg#icon-mainlogo"></use>
+                    </svg>
+                </a>
+                <div class="header__navigation-wrapper">
+                    <div class="header__navigation-container">
+                        <nav class="header__navigation">
+                            <ul class="header__nav">
+                                <li class="header__nav-item"><a class="header__nav-link" href="">Products</a></li>
+                                <li class="header__nav-item"><a class="header__nav-link" href="">How it works</a>
+                                </li>
+                                <li class="header__nav-item"><a class="header__nav-link" href="">Technology</a></li>
+                                <li class="header__nav-item"><a class="header__nav-link" href="">eero Secure</a>
+                                </li>
+                                <li class="header__nav-item"><a class="header__nav-link" href="">Support</a></li>
+                                <li class="header__nav-item"><a class="header__nav-link" href="">Find your
+                                        system</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__socials">
+                            <ul class="socials">
+                                <li>
+                                    <a href="" class="social-link">
+                                        <svg class="social-media__icon" width="30" height="30">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-link">
+                                        <svg class="social-media__icon" width="30" height="30">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-link">
+                                        <svg class="social-media__icon" width="30" height="30">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-link">
+                                        <svg class="social-media__icon" width="30" height="30">
+                                            <use href="./img/icons.svg#icon-pinterest"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-link">
+                                        <svg class="social-media__icon" width="30" height="30">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__btn-wrapper">
+                    <button class="header__btn-cart"><span class="header__btn-cart-content">Cart</span>
+                        <svg class="header__btn-cart-icon" width="30" height="30">
+                            <use href="./img/icons.svg#icon-cart"></use>
+                        </svg>
+                    </button>
+                    <div class="header__mobile-menu-open" aria-expanded="false">
+                        <span class="header__btn-decor"></span>
+                    </div>
+                </div>
+            </div>
         </header>
         <section class="hero">
-            <img class="hero__sticker" src="./img/eero.png" alt="eero device" width="576">
-            <div class="container">
-                <h1 class="hero__title">Wi-Fi 6 is here.</h1>
-                <p class="hero__caption">The future of home wifi is fast.</p>
-                <button class="hero__btn" type="buttun">Shop wifi solutions</button>
+            <div class="hero__anim-wrapper">
+                <picture class="slide-a">
+                    <source srcset="./img/hero/img-anim-1-mobile@1x.webp 1x,
+                                    ./img/hero/img-anim-1-mobile@2x.webp 2x" media="(max-width: 1439px)"
+                        type="image/webp">
+                    <source srcset="./img/hero/img-anim-1-mobile@1x.png 1x,
+                                    ./img/hero/img-anim-1-mobile@2x.png 2x" media="(max-width: 1439px)">
+                    <source srcset="./img/hero/img-anim-1-desktop@1x.webp 1x,
+                                    ./img/hero/img-anim-1-desktop@2x.webp 2x" media="(min-width: 1440px)"
+                        type="image/webp">
+                    <source srcset="./img/hero/img-anim-1-desktop@1x.png 1x,
+                                    ./img/hero/img-anim-1-desktop@2x.png 2x" media="(min-width: 1440px)">
+                    <img class="hero__sticker" src="./img/hero/img-anim-1-mobile@1x.png" alt="Eero device">
+                </picture>
+                <picture class="slide-b">
+                    <source srcset="./img/hero/img-anim-2-mobile@1x.webp 1x,
+                                    ./img/hero/img-anim-2-mobile@2x.webp 2x" media="(max-width: 1439px)"
+                        type="image/webp">
+                    <source srcset="./img/hero/img-anim-2-mobile@1x.png 1x,
+                                    ./img/hero/img-anim-2-mobile@2x.png 2x" media="(max-width: 1439px)">
+                    <source srcset="./img/hero/img-anim-2-desktop@1x.webp 1x,
+                                    ./img/hero/img-anim-2-desktop@2x.webp 2x" media="(min-width: 1440px)"
+                        type="image/webp">
+                    <source srcset="./img/hero/img-anim-2-desktop@1x.png 1x,
+                                    ./img/hero/img-anim-2-desktop@2x.png 2x" media="(min-width: 1440px)">
+                    <img class="hero__sticker" src="./img/hero/img-anim-2-mobile@1x.png" alt="Eero device">
+                </picture>
+            </div>
+            <div class="hero__background">
+                <div class="container hero__container">
+                    <h1 class="hero__title">Wi-Fi 6 is here.</h1>
+                    <p class="hero__caption">The future of home wifi is fast.</p>
+                    <button class="btn hero__btn" type="buttun">Shop wifi solutions</button>
+                </div>
             </div>
         </section>
         <section class="promo">
             <div class="container">
+                <p class="promo__subtitle">Explore eero systems on</p>
+                <svg class="promo__amazon-logo" width="108" height="33">
+                    <use href="./img/icons.svg#amazon"></use>
+                </svg>
+                <a href="" class="promo__link">Shop now</a>
+                <h2 class="promo__title">
+                    More wifi for the devices in your connected home.
+                </h2>
+                <p class="promo__text">
+                    eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds,
+                    increase your internet’s efficiency, and reduce network congestion. Say
+                    goodbye to dead spots and buffering with a connection that doesn’t slow
+                    you down, even as you add more devices.
+                </p>
+                <button type="button" class=".btn promo__button">Find your eero system</button>
                 <div class="promo__wrapper">
-                    <p class="promo__subtitle">Explore eero systems on</p>
-                    <svg class="promo__amazon-logo" width="108" height="33">
-                        <use href="./img/icons.svg#amazon"></use>
-                    </svg>
-                    <a href="" class="promo__link">Shop now</a>
-                    <h2 class="promo__title">
-                        More wifi for the devices in your connected home.
-                    </h2>
-                    <p class="promo__text">
-                        eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds,
-                        increase your internet’s efficiency, and reduce network congestion. Say
-                        goodbye to dead spots and buffering with a connection that doesn’t slow
-                        you down, even as you add more devices.
-                    </p>
-                    <button type="button" class="promo__button">Find your eero system</button>
-                    <img src="./img/devices.png" alt="Drawn people at home" width="928px" height="747px" />
+                    <picture>
+                        <source srcset="./img/promo/devices-mobile@1x.webp 1x,
+                                        ./img/promo/devices-mobile@2x.webp 2x" media="(max-width: 1023px)"
+                            type="image/webp">
+                        <source srcset="./img/promo/devices-mobile@1x.png 1x,
+                                        ./img/promo/devices-mobile@2x.png 2x" media="(max-width: 1023px)">
+                        <source srcset="./img/promo/devices-desktop@1x.webp 1x,
+                                        ./img/promo/devices-desktop@2x.webp 2x" media="(min-width: 1024px)"
+                            type="image/webp">
+                        <source srcset="./img/promo/devices-desktop@1x.png 1x,
+                                        ./img/promo/devices-desktop@2x.png 2x" media="(min-width: 1024px)">
+                        <img class="promo__img" src="./img/promo/devices-mobile@1x.png" alt="Drawn people at home">
+                    </picture>
+                    <div class="promo__anim-box">
+                        <div class="promo__anim-elements promo__anim-element-a"></div>
+                        <div class="promo__anim-elements promo__anim-element-b"></div>
+                        <div class="promo__anim-elements promo__anim-element-c"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -85,7 +207,7 @@
                 <a class="products__link" href="#">Compare All Models</a>
             </div>
         </section>
-        <section class="smart__home">
+        <section class="smart">
             <div class="container">
                 <ul class="smart__list">
                     <li class="smart__item">
@@ -184,8 +306,8 @@
         </section>
         <footer class="footer">
             <div class="container">
-                <a class="logo" href="#" class="logo__link">
-                    <svg class="logo__icon" width="86" height="39">
+                <a class="logo footer__logo" href="#" class="logo__link">
+                    <svg class="footer__logo-icon" width="86" height="39">
                         <use href="./img/icons.svg#icon-mainlogo"></use>
                     </svg>
                 </a>
@@ -230,7 +352,7 @@
                 <div class="footer__soc-set">
                     <p class="footer-title"> &copy;2021 EERO LLC, SAN FRANCISCO, CA</p>
 
-                    <ul class="social-media">
+                    <ul class="socials">
                         <li class="social-media__list">
                             <a href="" class="social-media__link">
                                 <svg class="social-media__icon" width="30" height="30">
@@ -272,6 +394,10 @@
         </footer>
     </main>
     <script defer src="./js/configurator.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

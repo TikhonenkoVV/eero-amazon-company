@@ -1,0 +1,42 @@
+@keyframes slide-a {
+    0% {
+        transform: translateX(100%);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-b {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    60% {
+        transform: translateX(0);
+    }
+    90% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@include kf(zoom-a, 0, 38px, 482px, 482px);
+@include kf(zoom-b, 366px, 0, 482px, 482px);
+@include kf(zoom-c, 391px, 186px, 482px, 482px);
+@include kf(zoom-a-m, 0, 16px, 200px, 200px);
+@include kf(zoom-b-m, 151px, 0, 200px, 200px);
+@include kf(zoom-c-m, 162px, 77px, 200px, 200px);

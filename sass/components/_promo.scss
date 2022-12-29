@@ -1,83 +1,191 @@
 .promo {
-  padding: 110px 0 4px;
-  font-weight: 400;
-  background-color: $colorBackgroundPrimary;
+    padding: 40px 0 5px;
+    text-align: center;
+    @include for-size(tablet) {
+        padding: 80px 0 3px;
+    }
+    @include for-size(desktop) {
+        padding: 110px 0 91px;
+    }
+    background-color: $colorBackgroundPrimary;
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__subtitle {
-    margin: 0 0 21px;
-    font-size: 18px;
-    line-height: calc(21 / 18);
+.promo__subtitle {
+    @include font('', 18px, calc(21 / 18), '');
+    margin-bottom: 21px;
     color: $colorTextPrimary;
-  }
+}
 
-  &__amazon-logo {
-    margin: 0 0 28px;
-  }
+.promo__amazon-logo {
+    display: block;
+    margin: 0 auto 28px;
+}
 
-  &__link {
-    display: inline-block;
-    margin: 0 0 122px;
+.promo__link {
+    display: block;
+    width: 78px;
+    margin: 0 auto 116px;
     text-transform: uppercase;
     font-size: 14px;
     line-height: calc(16 / 14);
     color: $colorTextPrimary;
     transition: color $baseTransition;
-
+    @include for-size(tablet) {
+        margin: 0 auto 60px;
+    }
+    @include for-size(desktop) {
+        margin: 0 auto 116px;
+    }
     &::after {
-      content: '';
-      display: block;
-      margin-top: 5px;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid $colorTextPrimary;
+        content: '';
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid $colorTextPrimary;
     }
 
     &:hover,
     &:focus {
-      color: $colorAccent;
-      &::after {
-        border-bottom: 1px solid $colorAccent;
-      }
+        color: $colorAccent;
+        &::after {
+            border-bottom: 1px solid $colorAccent;
+        }
     }
-  }
-  &__title {
-    margin-bottom: 44px;
-    max-width: 729px;
-    text-align: center;
-    font-size: 50px;
-    line-height: calc(60 / 50);
-    color: $colorTextPrimary;
-  }
+}
 
-  &__text {
-    margin-bottom: 78px;
+.promo__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 730px;
+    text-align: center;
+    @include font('', 30px, calc(40 / 30), '');
+    color: $colorTextPrimary;
+    @include for-size(tablet) {
+        @include font('', 50px, calc(60 / 50), '');
+        margin-bottom: 28px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 44px;
+    }
+}
+
+.promo__text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
     max-width: 736px;
     text-align: center;
-    font-size: 18px;
-    line-height: calc(25 / 18);
+    @include font('', 12px, calc(14 / 12), '');
     color: $colorTextPrimary;
-  }
+    @include for-size(tablet) {
+        @include font('', 18px, calc(25 / 18), '');
+        margin-bottom: 28px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 78px;
+    }
+}
 
-  &__button {
-    padding: 17px 37px 21px;
+.promo__button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
     background-color: $colorAccent;
     border: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: calc(14 / 14);
-    letter-spacing: 0.11px;
     color: $colorTextWhite;
     transition: background-color $baseTransition;
 
     &:hover,
     &:focus {
-      background-color: $colorButtonHover;
+        background-color: $colorButtonHover;
     }
-  }
+    @include for-size(tablet) {
+        margin-bottom: 60px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 91px;
+    }
+}
+
+.promo__wrapper {
+    position: relative;
+    width: 384px;
+    height: 232px;
+    margin-left: auto;
+    margin-right: auto;
+    @include for-size(tablet) {
+        width: 928px;
+        height: 560px;
+    }
+}
+
+.promo__anim-box {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    width: 362px;
+    height: 210px;
+    overflow: hidden;
+    // border: 1px solid red;
+    @include for-size(tablet) {
+        top: 20px;
+        left: 5px;
+        width: 872px;
+        height: 506px;
+    }
+}
+
+.promo__anim-elements {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $colorTextPrimary;
+    border-radius: 50%;
+    @include for-size(tablet) {
+        border: 2px solid $colorTextPrimary;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.promo__anim-element-a {
+    top: 105px;
+    left: 86px;
+    animation-name: zoom-a-m;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+    @include for-size(tablet) {
+        animation-name: zoom-a;
+        top: 254px;
+        left: 216px;
+    }
+}
+.promo__anim-element-b {
+    top: 89px;
+    left: 240px;
+    animation-name: zoom-b-m;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+    @include for-size(tablet) {
+        animation-name: zoom-b;
+        top: 216px;
+        left: 582px;
+    }
+}
+.promo__anim-element-c {
+    top: 166px;
+    left: 251px;
+    animation-name: zoom-c-m;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+    @include for-size(tablet) {
+        animation-name: zoom-c;
+        top: 402px;
+        left: 607px;
+    }
 }

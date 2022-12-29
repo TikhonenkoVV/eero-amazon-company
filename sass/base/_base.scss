@@ -1,8 +1,9 @@
 body {
-  background-color: $colorBackgroundPrimary;
-  color: $colorTextPrimary;
+    background-color: $colorBackgroundPrimary;
+    color: $colorTextPrimary;
 
-  font-family: roboto, sans-serif;
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.11px;
 }
 
 h1,
@@ -14,25 +15,25 @@ h6,
 p,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

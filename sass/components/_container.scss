@@ -1,5 +1,13 @@
 .container {
-  padding: 0 15px;
-  width: 1440px;
-  margin: 0 auto;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include for-size(mobile) {
+        width: 414px;
+    }
+    @include for-size(tablet) {
+        width: 1024px;
+    }
+    @include for-size(desktop) {
+        width: 1440px;
+    }
 }
