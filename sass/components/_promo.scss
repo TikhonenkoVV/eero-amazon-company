@@ -95,12 +95,6 @@
     background-color: $colorAccent;
     border: none;
     color: $colorTextWhite;
-    transition: background-color $baseTransition;
-
-    &:hover,
-    &:focus {
-        background-color: $colorButtonHover;
-    }
     @include for-size(tablet) {
         margin-bottom: 60px;
     }
@@ -128,7 +122,6 @@
     width: 362px;
     height: 210px;
     overflow: hidden;
-    // border: 1px solid red;
     @include for-size(tablet) {
         top: 20px;
         left: 5px;

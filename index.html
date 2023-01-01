@@ -106,16 +106,16 @@
                     <img class="hero__sticker" src="./img/hero/img-anim-1-mobile@1x.png" alt="Eero device">
                 </picture>
                 <picture class="slide-b">
-                    <source srcset="./img/hero/img-anim-2-mobile@1x.webp 1x,
-                                    ./img/hero/img-anim-2-mobile@2x.webp 2x" media="(max-width: 1439px)"
+                    <source srcset="./img/hero/img-anim-2-white-mobile@1x.webp 1x,
+                                    ./img/hero/img-anim-2-white-mobile@2x.webp 2x" media="(max-width: 1439px)"
                         type="image/webp">
-                    <source srcset="./img/hero/img-anim-2-mobile@1x.png 1x,
-                                    ./img/hero/img-anim-2-mobile@2x.png 2x" media="(max-width: 1439px)">
-                    <source srcset="./img/hero/img-anim-2-desktop@1x.webp 1x,
-                                    ./img/hero/img-anim-2-desktop@2x.webp 2x" media="(min-width: 1440px)"
+                    <source srcset="./img/hero/img-anim-2-white-mobile@1x.png 1x,
+                                    ./img/hero/img-anim-2-white-mobile@2x.png 2x" media="(max-width: 1439px)">
+                    <source srcset="./img/hero/img-anim-2-white-desktop@1x.webp 1x,
+                                    ./img/hero/img-anim-2-white-desktop@2x.webp 2x" media="(min-width: 1440px)"
                         type="image/webp">
-                    <source srcset="./img/hero/img-anim-2-desktop@1x.png 1x,
-                                    ./img/hero/img-anim-2-desktop@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="./img/hero/img-anim-2-white-desktop@1x.png 1x,
+                                    ./img/hero/img-anim-2-white-desktop@2x.png 2x" media="(min-width: 1440px)">
                     <img class="hero__sticker" src="./img/hero/img-anim-2-mobile@1x.png" alt="Eero device">
                 </picture>
             </div>
@@ -143,7 +143,7 @@
                     goodbye to dead spots and buffering with a connection that doesn’t slow
                     you down, even as you add more devices.
                 </p>
-                <button type="button" class=".btn promo__button">Find your eero system</button>
+                <button type="button" class="btn promo__button">Find your eero system</button>
                 <div class="promo__wrapper">
                     <picture>
                         <source srcset="./img/promo/devices-mobile@1x.webp 1x,
@@ -167,44 +167,40 @@
             </div>
         </section>
         <section class="products">
-            <ul class="products__list">
-                <li class="products__item">
-                    <div class="products__holder">
-                        <p class="products__caption">Wi-Fi 6</p>
-                        <h2 class="products__title">eero Pro 6</h2>
+            <div class="container">
+                <div class="products__wrapper">
+                    <div class="products__element products__element-pro6">
+                        <p class="products__icon">Wi-Fi 6</p>
+                        <p class="products__caption">eero Pro 6</p>
+                        <h2 class="products__title products__title--short">The fastest eero yet.</h2>
+                        <p class="products__description">
+                            Tri-band Wi-Fi 6 system designed for homes with gigabit internet
+                            connections.
+                        </p>
+                        <p class="products__description-price">
+                            Starting at <span class="products__price">$229</span>
+                        </p>
+                        <button class="products__button" type="button">Shop now</button>
                     </div>
-                    <h3 class="products__subtitle">The fastest eero yet.</h3>
-                    <p class="products__description">
-                        Tri-band Wi-Fi 6 system designed for homes with gigabit internet
-                        connections.
-                    </p>
-                    <p class="products__description">
-                        Starting at <span class="products__price">$229</span>
-                    </p>
-                    <button class="products__button" type="button">Shop now</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__holder">
-                        <p class="products__caption">Wi-Fi 6</p>
-                        <h2 class="products__title">eero 6</h2>
-                    </div>
-                    <div class="products__wrapper">
-                        <h3 class="products__subtitle products__subtitle--wide">
+                    <div class="products__element products__element6">
+                        <p class="products__icon">Wi-Fi 6</p>
+                        <p class="products__caption">eero 6</p>
+                        <h2 class="products__title">
                             Experience Wi-Fi 6—the new standard for home wifi.
-                        </h3>
+                        </h2>
+                        <p class="products__description">
+                            Dual-band Wi-Fi 6 system designed for homes with 500 Mbps internet
+                            connections.
+                        </p>
+                        <p class="products__description-price">
+                            Starting at <span class="products__price">$129</span>
+                        </p>
+                        <button class="btn products__button" type="button">Shop now</button>
                     </div>
-                    <p class="products__description">
-                        Dual-band Wi-Fi 6 system designed for homes with 500 Mbps internet
-                        connections.
-                    </p>
-                    <p class="products__description">
-                        Starting at <span class="products__price">$129</span>
-                    </p>
-                    <button class="products__button" type="button">Shop now</button>
-                </li>
-            </ul>
-            <div class="products__box">
-                <a class="products__link" href="#">Compare All Models</a>
+                </div>
+                <div class="products__box">
+                    <a class="products__link" href="#">Compare All Models</a>
+                </div>
             </div>
         </section>
         <section class="smart">

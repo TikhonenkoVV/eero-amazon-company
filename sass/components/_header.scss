@@ -177,6 +177,12 @@
         margin-right: 0;
         background: none;
     }
+    @include for-size(tablet) {
+        margin-right: -30px;
+    }
+    @include for-size(desktop) {
+        margin-right: -34px;
+    }
     &:hover,
     &:focus {
         background-color: $colorButtonHover;

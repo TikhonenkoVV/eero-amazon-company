@@ -530,11 +530,13 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .container {
+    padding: 0 30px;
     width: 1024px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
+    padding: 0 34px;
     width: 1440px;
   }
 }
@@ -753,6 +755,16 @@ img {
     height: 30px;
     margin-right: 0;
     background: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__btn-cart {
+    margin-right: -30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__btn-cart {
+    margin-right: -34px;
   }
 }
 .header__btn-cart:hover, .header__btn-cart:focus {
@@ -1109,10 +1121,6 @@ img {
   background-color: #2468ff;
   border: none;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.promo__button:hover, .promo__button:focus {
-  background-color: #161f49;
 }
 @media screen and (min-width: 1024px) {
   .promo__button {
@@ -1235,109 +1243,246 @@ img {
 }
 
 .products {
-  background-image: url(../img/twoeero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  height: 1179px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 188px;
-  padding-right: 188px;
   padding-top: 580px;
+  padding-bottom: 80px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 1023.98px) {
   .products {
-    background-image: url(../img/twoeero@2x.jpg);
+    padding: 0px;
   }
 }
-.products__list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 89px;
+@media screen and (min-width: 414px) {
+  .products {
+    width: 414px;
+  }
 }
-.products__item {
-  flex-basis: 424px;
+@media screen and (min-width: 1024px) {
+  .products {
+    width: 1024px;
+    padding-top: 400px;
+    padding-bottom: 80px;
+    background-image: url(../img/products/products-eero-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../img/products/products-eero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .products {
+    width: 1440px;
+    padding-top: 580px;
+    padding-bottom: 80px;
+    background-image: url(../img/products/products-eero-desktop@1x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../img/products/products-eero-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products__wrapper {
+    display: flex;
+    gap: 34px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .products__wrapper {
+    gap: 60px;
+    margin-bottom: 90px;
+    padding: 0 106px;
+  }
+}
+
+.products__element {
+  text-align: center;
   color: #ffffff;
 }
-.products__title {
-  font-size: 36px;
-  line-height: 1.22;
-  font-weight: 400;
-  margin-bottom: 13px;
+@media screen and (max-width: 1023.98px) {
+  .products__element {
+    padding-top: 421px;
+    padding-bottom: 38px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
-.products__title::before {
-  display: block;
-  content: "";
-  width: 81px;
-  height: 21px;
-  background-color: #ffffff;
-  margin-bottom: 16px;
-  border-radius: 18px;
+@media screen and (min-width: 1024px) {
+  .products__element {
+    flex-basis: calc((100% - 34px) / 2);
+  }
 }
-.products__holder {
-  position: relative;
+@media screen and (min-width: 1440px) {
+  .products__element {
+    flex-basis: calc((100% - 60px) / 2);
+    text-align: left;
+  }
 }
-.products__caption {
-  position: absolute;
-  left: 14px;
-  top: 0;
+
+@media screen and (max-width: 1023.98px) {
+  .products__element-pro6 {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/products/products-eero-pro6-mobile@1x.jpg");
+  }
+}
+@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (min-resolution: 192dpi), screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+  .products__element-pro6 {
+    background-image: url("../img/products/products-eero-pro6-mobile@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .products__element6 {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/products/products-eero6-mobile@1x.jpg");
+  }
+}
+@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (min-resolution: 192dpi), screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+  .products__element6 {
+    background-image: url("../img/products/products-eero6-mobile@2x.jpg");
+  }
+}
+
+.products__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
   color: #000000;
   font-weight: 700;
-  line-height: 1.31;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
-.products__subtitle {
-  width: 222px;
+@media screen and (min-width: 1440px) {
+  .products__icon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.products__caption {
+  font-size: 22px;
+  line-height: 1.1818181818;
   font-size: 42px;
   line-height: 1.14;
   font-weight: 400;
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 1024px) {
+  .products__caption {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.0714285714;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .products__caption {
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 1.2222222222;
+  }
+}
+
+.products__title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1428571429;
   margin-bottom: 20px;
 }
-.products__wrapper {
-  position: relative;
-  height: 96px;
-  margin-bottom: 20px;
+@media screen and (min-width: 1024px) {
+  .products__title {
+    font-size: 36px;
+    line-height: 1.1111111111;
+  }
 }
-.products__subtitle--wide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 542px;
+@media screen and (min-width: 1440px) {
+  .products__title {
+    font-size: 42px;
+    line-height: 1.1428571429;
+  }
 }
+
+.products__title--short {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 222px;
+}
+@media screen and (min-width: 1440px) {
+  .products__title--short {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .products__description {
-  font-size: 18px;
-  line-height: 1.4;
-  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 1.375;
+  margin-bottom: 23px;
 }
-.products__description:last-child {
-  margin-bottom: 36px;
+@media screen and (min-width: 1024px) {
+  .products__description {
+    font-size: 18px;
+    line-height: 1.3333333333;
+    margin-bottom: 28px;
+  }
 }
+
+.products__description-price {
+  font-size: 16px;
+  line-height: 1.375;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .products__description-price {
+    font-size: 18px;
+    line-height: 1.3333333333;
+    margin-bottom: 27px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .products__description-price {
+    margin-bottom: 38px;
+  }
+}
+
 .products__price {
   font-weight: 700;
 }
+
 .products__button {
   background-color: #2468ff;
   color: #ffffff;
   width: 220px;
   height: 52px;
-  padding-top: 17px;
-  padding-bottom: 21px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
-  text-align: center;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.products__button:hover, .products__button:focus {
-  background-color: #161f49;
-}
+
 .products__box {
   text-align: center;
 }
+
 .products__link {
   position: relative;
   color: #ffffff;
@@ -1740,7 +1885,6 @@ img {
 }
 
 .footer,
-.products,
 .smart,
 .selection {
   display: none;

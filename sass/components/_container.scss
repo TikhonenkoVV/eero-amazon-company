@@ -5,9 +5,11 @@
         width: 414px;
     }
     @include for-size(tablet) {
+        padding: 0 30px;
         width: 1024px;
     }
     @include for-size(desktop) {
+        padding: 0 34px;
         width: 1440px;
     }
 }
