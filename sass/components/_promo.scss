@@ -22,34 +22,27 @@
 }
 
 .promo__link {
-    display: block;
-    width: 78px;
-    margin: 0 auto 116px;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    color: $colorTextPrimary;
-    transition: color $baseTransition;
+    margin-bottom: 30px;
     @include for-size(tablet) {
-        margin: 0 auto 60px;
+        margin-bottom: 60px;
     }
     @include for-size(desktop) {
-        margin: 0 auto 116px;
+        margin-bottom: 116px;
     }
-    &::after {
-        content: '';
-        display: block;
-        margin-top: 5px;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid $colorTextPrimary;
-    }
+}
 
+.promo__link.link {
+    color: $colorTextPrimary;
+    transition: color $baseTransition;
+    &::after {
+        background-color: $colorTextPrimary;
+        transition: background-color $baseTransition;
+    }
     &:hover,
     &:focus {
         color: $colorAccent;
         &::after {
-            border-bottom: 1px solid $colorAccent;
+            background-color: $colorAccent;
         }
     }
 }
@@ -105,10 +98,12 @@
 
 .promo__wrapper {
     position: relative;
-    width: 384px;
-    height: 232px;
     margin-left: auto;
     margin-right: auto;
+    @include for-size(tablet) {
+        width: 384px;
+        height: 232px;
+    }
     @include for-size(tablet) {
         width: 928px;
         height: 560px;
@@ -122,6 +117,9 @@
     width: 362px;
     height: 210px;
     overflow: hidden;
+    @media screen and(max-width: 413px) {
+        display: none;
+    }
     @include for-size(tablet) {
         top: 20px;
         left: 5px;

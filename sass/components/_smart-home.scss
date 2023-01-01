@@ -1,52 +1,121 @@
 .smart {
-    max-width: 1440px;
-    padding: 167px 0 72px;
+    position: relative;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 25px 0 30px;
     color: $colorTextWhite;
-
     background-color: $colorBackgroundHero;
-    background-image: url('../img/door.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include for-size(mobile) {
+        width: 414px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include for-size(tablet) {
+        padding: 80px 0;
+        width: 1024px;
+    }
+    @include for-size(desktop) {
+        padding: 166px 0 72px;
+        width: 1440px;
+    }
+}
+
+.smart__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: $lg;
+    background-origin: border-box;
+}
+
+.smart__container {
+    position: relative;
+    z-index: 3;
+}
+
+.smart__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 201px;
+    margin-bottom: 12px;
+    @include for-size(tablet) {
+        gap: 50px;
+        margin-bottom: 33px;
+    }
+    @include for-size(desktop) {
+        gap: 57px;
+        margin-bottom: 44px;
+    }
 }
 
 .smart__list {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 57px;
+    @media screen and(max-width: 413px) {
+        gap: 20px;
+    }
+    @include for-size(mobile-only) {
+        order: 2;
+    }
+}
+
+.smart__item {
+    width: 78px;
+    height: 78px;
 }
 
 .smart__icon {
     fill: currentColor;
     border: 2px solid $colorTextWhite;
     border-radius: 33%;
-    width: 79px;
-    height: 79px;
+    width: 78px;
+    height: 78px;
     &--current {
         background-color: $colorBlack;
     }
 }
 
 .section__title {
-    @include font(400, 50px, 1.2, '');
-    margin-bottom: 44px;
+    @include font(400, 30px, calc(45 / 30), '');
+    @include for-size(mobile-only) {
+        order: 1;
+    }
+    @include for-size(tablet) {
+        @include font(400, 50px, calc(60 / 50), '');
+    }
 }
 
 .section__text {
     max-width: 734px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 118px;
-    @include font(400, 18px, 1.39, '');
+    margin-bottom: 15px;
+    @include font(400, 16px, calc(20 / 16), '');
+    @include for-size(tablet) {
+        margin-bottom: 34px;
+        @include font(400, 18px, calc(25 / 18), '');
+    }
+    @include for-size(desktop) {
+        margin-bottom: 119px;
+    }
 }
 
 .smart__btn {
     width: 220px;
-    margin-bottom: 67px;
+    height: 52px;
+    border: none;
+    background-color: $colorAccent;
+    margin-bottom: 34px;
+    @include for-size(tablet) {
+        margin-bottom: 50px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 69px;
+    }
 }
 
 .smart__box {
@@ -56,7 +125,12 @@
 }
 
 .smart__box-item {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid $colorTextWhite;
     background-color: $colorTextWhite;
+    cursor: pointer;
+    &--current {
+        background-color: $colorBlack;
+    }
 }

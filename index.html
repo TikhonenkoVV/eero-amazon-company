@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Eero Amazon Company</title>
 </head>
@@ -133,7 +137,7 @@
                 <svg class="promo__amazon-logo" width="108" height="33">
                     <use href="./img/icons.svg#amazon"></use>
                 </svg>
-                <a href="" class="promo__link">Shop now</a>
+                <a href="" class="promo__link link">Shop now</a>
                 <h2 class="promo__title">
                     More wifi for the devices in your connected home.
                 </h2>
@@ -180,7 +184,7 @@
                         <p class="products__description-price">
                             Starting at <span class="products__price">$229</span>
                         </p>
-                        <button class="products__button" type="button">Shop now</button>
+                        <button class="btn products__btn" type="button">Shop now</button>
                     </div>
                     <div class="products__element products__element6">
                         <p class="products__icon">Wi-Fi 6</p>
@@ -195,7 +199,7 @@
                         <p class="products__description-price">
                             Starting at <span class="products__price">$129</span>
                         </p>
-                        <button class="btn products__button" type="button">Shop now</button>
+                        <button class="btn products__btn" type="button">Shop now</button>
                     </div>
                 </div>
                 <div class="products__box">
@@ -204,40 +208,106 @@
             </div>
         </section>
         <section class="smart">
-            <div class="container">
-                <ul class="smart__list">
-                    <li class="smart__item">
-                        <svg class="smart__icon smart__icon--current">
-                            <use href="./img/icons.svg#icon-lighting"></use>
-                        </svg>
-                    </li>
-                    <li class="smart__item">
-                        <svg class="smart__icon">
-                            <use href="./img/icons.svg#icon-appliances"></use>
-                        </svg>
-                    </li>
-                    <li class="smart__item">
-                        <svg class="smart__icon">
-                            <use href="./img/icons.svg#icon-security"></use>
-                        </svg>
-                    </li>
-                </ul>
-
-                <h2 class="section__title">Unlock your wifi’s potential</h2>
-
+            <div class="smart__overlay"></div>
+            <div class="swiper-container-smart">
+                <div class="swiper-wrapper swiper-wrapper-smart">
+                    <div class="swiper-slide">
+                        <div>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="./img/smart/light-mobile@1x.jpg 1x,
+                                            ./img/smart/light-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/smart/light-mobile@1x.webp 1x,
+                                            ./img/smart/light-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/smart/light-tablet@1x.jpg 1x,
+                                            ./img/smart/light-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/smart/light-tablet@1x.webp 1x,
+                                            ./img/smart/light-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/smart/light-desktop@1x.jpg 1x,
+                                            ./img/smart/light-desktop@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/smart/light-desktop@1x.webp 1x,
+                                            ./img/smart/light-desktop@2x.webp 2x" type="image/webp">
+                                <img class="sw-slide" srcset="./img/smart/light-mobile@1x.jpg 1x,
+                                             ./img/smart/light-mobile@2x.jpg 2x" src="./img/smart/light-mobile@1x.jpg"
+                                    alt="двомісний номер">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="./img/smart/lock-mobile@1x.jpg 1x,
+                                            ./img/smart/lock-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/smart/lock-mobile@1x.webp 1x,
+                                            ./img/smart/lock-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/smart/lock-tablet@1x.jpg 1x,
+                                            ./img/smart/lock-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/smart/lock-tablet@1x.webp 1x,
+                                            ./img/smart/lock-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/smart/lock-desktop@1x.jpg 1x,
+                                            ./img/smart/lock-desktop@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/smart/lock-desktop@1x.webp 1x,
+                                            ./img/smart/lock-desktop@2x.webp 2x" type="image/webp">
+                                <img class="sw-slide" srcset="./img/smart/lock-mobile@1x.jpg 1x,
+                                            ./img/smart/lock-mobile@2x.jpg 2x" src="./img/smart/lock-mobile@1x.jpg"
+                                    alt="двомісний номер">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="./img/smart/plug-mobile@1x.jpg 1x,
+                                            ./img/smart/plug-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/smart/plug-mobile@1x.webp 1x,
+                                            ./img/smart/plug-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/smart/plug-tablet@1x.jpg 1x,
+                                            ./img/smart/plug-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/smart/plug-tablet@1x.webp 1x,
+                                            ./img/smart/plug-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/smart/plug-desktop@1x.jpg 1x,
+                                            ./img/smart/plug-desktop@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/smart/plug-desktop@1x.webp 1x,
+                                            ./img/smart/plug-desktop@2x.webp 2x" type="image/webp">
+                                <img class="sw-slide" srcset="./img/smart/plug-mobile@1x.jpg 1x,
+                                            ./img/smart/plug-mobile@2x.jpg 2x" src="./img/smart/plug-mobile@1x.jpg"
+                                    alt="двомісний номер">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container smart__container">
+                <div class="smart__wrapper">
+                    <ul class="smart__list">
+                        <li class="smart__item">
+                            <svg class="smart__icon smart__icon--current" width="78" height="78">
+                                <use href="./img/icons.svg#icon-lighting"></use>
+                            </svg>
+                        </li>
+                        <li class="smart__item">
+                            <svg class="smart__icon" width="78" height="78">
+                                <use href="./img/icons.svg#icon-appliances"></use>
+                            </svg>
+                        </li>
+                        <li class="smart__item">
+                            <svg class="smart__icon" width="78" height="78">
+                                <use href="./img/icons.svg#icon-security"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <h2 class="section__title">Unlock your wifi’s potential</h2>
+                </div>
                 <p class="section__text">Both eero 6 and eero Pro 6 feature a built-in Zigbee smart home hub, making it
                     easy to
                     connect compatible devices with Alexa. So you can control certain lights, locks, plugs, and
                     moreвЂ”without
                     the
                     need to buy separate smart home hubs for each.</p>
-
-
                 <button type="button" class="btn smart__btn">
                     Learn More
                 </button>
 
-                <ul class="smart__box">
+                <ul class="swiper-pagination smart__box">
                     <li class="smart__box-item"> </li>
                     <li class="smart__box-item"> </li>
                     <li class="smart__box-item"> </li>
@@ -394,6 +464,9 @@
     <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./js/slider.js"></script>
 </body>
 
 </html>

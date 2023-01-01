@@ -4,6 +4,7 @@
 @import './utils/mixins';
 @import './utils/animation';
 @import './components/buttons';
+@import './components/slider';
 @import './components/container';
 @import './components/header';
 @import './components/socials';
@@ -19,7 +20,6 @@
 @import './utils/vh';
 
 .footer,
-.smart,
 .selection {
     display: none;
 }

@@ -61,7 +61,7 @@
 }
 
 .hero__container {
-    padding-bottom: 139px;
+    padding-bottom: 141px;
     @include for-size(tablet) {
         padding-bottom: 140px;
     }
@@ -118,7 +118,6 @@
 .hero__btn {
     width: 226px;
     height: 50px;
-    color: inherit;
     background: none;
     border: 1px solid $colorTextWhite;
 }

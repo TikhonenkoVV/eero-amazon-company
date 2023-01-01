@@ -1,5 +1,6 @@
 .btn {
     @include font(400, 14px, 1, '');
+    color: $colorTextWhite;
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color $baseTransition;
@@ -10,4 +11,17 @@
 }
 
 .link {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1px 0 7px;
+    @include font(400, 14px, 1, '');
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+    }
 }
