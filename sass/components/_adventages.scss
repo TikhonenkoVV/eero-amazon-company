@@ -1,4 +1,6 @@
 .advantages {
+    max-width: 1440px;
+    margin: 0 auto;
     text-align: center;
     padding: 50px 0;
     @include for-size(tablet) {
@@ -12,7 +14,7 @@
 .advantages__title {
     max-width: 782px;
     margin-bottom: 50px;
-    @include font('', 30px, calc(40 / 30), '');
+    @include font(400, 30px, calc(40 / 30), '');
     @include for-size(tablet) {
         margin-left: auto;
         margin-right: auto;
