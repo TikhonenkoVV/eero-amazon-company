@@ -39,7 +39,7 @@
 }
 
 .header__banner-text {
-    @include font(400, 10px, 1.2, '');
+    @include font(400, 12px, 1, '');
     @include for-size(tablet) {
         @include font(400, 14px, 1.643, '');
     }
@@ -79,7 +79,7 @@
         bottom: 0;
         width: 100%;
         height: calc(100% - 74px);
-        transform: translatey(-100%);
+        transform: translatey(-100% - 74px);
         transition: transform $baseTransition;
     }
 }

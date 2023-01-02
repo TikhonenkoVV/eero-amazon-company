@@ -108,10 +108,9 @@
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
-    @include font(400, 21px, 1.1429, '');
+    @include font(400, 20px, calc(24 / 20), '');
     @include for-size(tablet) {
         margin-bottom: 15px;
-        @include font('', 20px, 1.5, '');
     }
 }
 
