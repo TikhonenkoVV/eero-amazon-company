@@ -4,7 +4,7 @@
     const chkboxM = document.querySelector('.configurator__checkbox--medium');
     const chkboxL = document.querySelector('.configurator__checkbox--larger');
     const imgBgr = document.querySelector('.configurator__img');
-    let pathA = '../img/';
+    let pathA = './img/';
     var srcA = imgBgr.src;
     var srcB = '';
     var srcC = '';
