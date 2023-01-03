@@ -6,7 +6,10 @@
     display: flex;
     justify-content: center;
     gap: 46px;
-    margin-bottom: 37px;
+    margin-bottom: 30px;
+    @include for-size(desktop) {
+        margin-bottom: 36px;
+    }
 }
 
 .configurator__item {
@@ -38,60 +41,66 @@
     width: 18px;
     height: 18px;
     color: $colorTextWhite;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(23 / 14);
-    letter-spacing: 0.10998px;
+    @include font(400, 14px, calc(23 / 14), 0.10998px);
     background-color: $colorPrimaryGray;
     &--current {
         background-color: $colorSquareGreen;
     }
 }
 
-// .configurator__box {
-//   padding-top: 250px;
-// }
-
 .configurator__page {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14px;
     margin-bottom: 20px;
+    @include for-size(mobile-only) {
+        flex-direction: column;
+        gap: 10px;
+    }
+    @include for-size(tablet) {
+        gap: 14px;
+    }
 }
 
 .configurator__caption {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(21 / 18);
+    @include font(400, 18px, calc(20 / 18), '');
 }
 
 .configurator__group {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 15px;
+    width: 100%;
+    max-width: 392px;
 }
 
 .configurator__img {
-    width: 387px;
-    margin: 0 auto 58px;
+    width: 100%;
+    max-width: 386px;
+    margin: 0 auto 40px;
+    @include for-size(desktop) {
+        margin-bottom: 58px;
+    }
 }
 
 .configurator__label {
-    display: block;
-    order: 2;
-    padding: 16px 26px;
-    font-size: 21px;
-    line-height: calc(29 / 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0;
+    height: 60px;
+    @include font(400, 21px, 1, '');
     color: rgba(64, 64, 64, 0.3);
-    background-color: $colorBackgroundPrimary;
     border: 2px solid #c0c0c0;
-    transition: color $baseTransition, background-color $baseTransition;
+    transition: color $baseTransition, background-color $baseTransition,
+        border-color $baseTransition;
     &:hover,
     &:focus,
     &--current {
-        color: $colorTextWhite;
-        background-color: $colorButtonHover;
+        background-color: $colorBackgroundPrimary;
+        color: $colorTextPrimary;
+        border-color: $colorTextPrimary;
     }
 }
 
@@ -104,12 +113,9 @@
 .configurator__btn {
     display: block;
     width: 220px;
-    padding: 17px 0 21px;
+    padding: 19px 0 19px;
     color: $colorTextWhite;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0.11px;
+    @include font(700, 14px, 1, '');
     text-transform: uppercase;
     text-align: center;
     background-color: $colorPrimaryGray;

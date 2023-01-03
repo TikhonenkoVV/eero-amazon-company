@@ -79,7 +79,7 @@
         bottom: 0;
         width: 100%;
         height: calc(100% - 74px);
-        transform: translatey(-100% - 74px);
+        transform: translatey(calc(-100% - 74px));
         transition: transform $baseTransition;
     }
 }
