@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <header class="header">
             <div class="header__banner">
                 <p class="header__banner-text">Free 2-day shipping | 30-day money back guarantee</p>
@@ -433,39 +433,90 @@
                         </li>
                     </ul>
                     <div class="configurator__box">
-                        <form action="#">
-                            <img class="configurator__img" src="./img/home-0.png" width="387">
+                        <form class="home" action="#">
+                            <img class="configurator__img" src="./img/selection/home@1x.png" width="386">
                             </img>
-                            <div class="configurator__page configurator__page--home">
+                            <div class="configurator__controls configurator__controls--home">
                                 <span class="configurator__caption">I have a</span>
                                 <div class="configurator__group" role="group">
-                                    <label class="configurator__label configurator__label--smaller">smaller
-                                        <input
-                                            class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
-                                            type="radio" name="size">
+                                    <label id="home-s" for="size-s"
+                                        class="configurator__label configurator__label--smaller">smaller
                                     </label>
-                                    <label class="configurator__label configurator__label--medium">medium
-                                        <input
-                                            class="configurator__checkbox configurator__checkbox--medium visually-hidden"
-                                            type="radio" name="size">
+                                    <input
+                                        class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
+                                        type="radio" name="size" id="size-s">
+                                    <label id="home-m" for="size-m"
+                                        class="configurator__label configurator__label--medium">medium
                                     </label>
-                                    <label class="configurator__label configurator__label--larger">larger
-                                        <input
-                                            class="configurator__checkbox configurator__checkbox--larger visually-hidden"
-                                            type="radio" name="size">
+                                    <input class="configurator__checkbox configurator__checkbox--medium visually-hidden"
+                                        type="radio" name="size" id="size-m">
+                                    <label id="home-l" for="size-l"
+                                        class="configurator__label configurator__label--larger">larger
                                     </label>
+                                    <input class="configurator__checkbox configurator__checkbox--larger visually-hidden"
+                                        type="radio" name="size" id="size-l">
                                 </div>
                                 <span class="configurator__caption">home.</span>
                             </div>
-                            <div class="configurator__page configurator__page--gadgets visually-hidden"></div>
-                            <div class="configurator__page configurator__page--speed visually-hidden"></div>
-                            <div class="configurator__page configurator__page--buy visually-hidden"></div>
-                            <div class="configurator__btn-wrapper">
-                                <a href=""
-                                    class="configurator__btn configurator__btn--preview visually-hidden">Preview</a>
-                                <a href="" class="configurator__btn configurator__btn--next">Next</a>
+                        </form>
+                        <form class="gadjets visually-hidden" action="#">
+                            <img class="configurator__img" src="./img/selection/home@1x.png" width="386">
+                            </img>
+                            <div class="configurator__controls configurator__controls--home">
+                                <span class="configurator__caption">I have a</span>
+                                <div class="configurator__group" role="group">
+                                    <label id="home-s" for="size-s"
+                                        class="configurator__label configurator__label--smaller">smaller
+                                    </label>
+                                    <input
+                                        class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
+                                        type="radio" name="size" id="size-s">
+                                    <label id="home-m" for="size-m"
+                                        class="configurator__label configurator__label--medium">medium
+                                    </label>
+                                    <input class="configurator__checkbox configurator__checkbox--medium visually-hidden"
+                                        type="radio" name="size" id="size-m">
+                                    <label id="home-l" for="size-l"
+                                        class="configurator__label configurator__label--larger">larger
+                                    </label>
+                                    <input class="configurator__checkbox configurator__checkbox--larger visually-hidden"
+                                        type="radio" name="size" id="size-l">
+                                </div>
+                                <span class="configurator__caption">home.</span>
                             </div>
                         </form>
+                        <form class="speed visually-hidden" action="#">
+                            <img class="configurator__img" src="./img/selection/home@1x.png" width="386">
+                            </img>
+                            <div class="configurator__controls configurator__controls--home">
+                                <span class="configurator__caption">I have a</span>
+                                <div class="configurator__group" role="group">
+                                    <label id="home-s" for="size-s"
+                                        class="configurator__label configurator__label--smaller">smaller
+                                    </label>
+                                    <input
+                                        class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
+                                        type="radio" name="size" id="size-s">
+                                    <label id="home-m" for="size-m"
+                                        class="configurator__label configurator__label--medium">medium
+                                    </label>
+                                    <input class="configurator__checkbox configurator__checkbox--medium visually-hidden"
+                                        type="radio" name="size" id="size-m">
+                                    <label id="home-l" for="size-l"
+                                        class="configurator__label configurator__label--larger">larger
+                                    </label>
+                                    <input class="configurator__checkbox configurator__checkbox--larger visually-hidden"
+                                        type="radio" name="size" id="size-l">
+                                </div>
+                                <span class="configurator__caption">home.</span>
+                            </div>
+                        </form>
+                        <div class="configurator__btn-wrapper">
+                            <button class="btn configurator__btn configurator__btn--preview visually-hidden"
+                                type="button">Preview</button>
+                            <button class="btn configurator__btn configurator__btn--next disabled"
+                                type="button">Next</button>
+                        </div>
                     </div>
                 </div>
             </div>

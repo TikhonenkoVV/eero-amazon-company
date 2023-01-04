@@ -48,7 +48,7 @@
     }
 }
 
-.configurator__page {
+.configurator__controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,17 +111,15 @@
 }
 
 .configurator__btn {
-    display: block;
-    width: 220px;
-    padding: 19px 0 19px;
-    color: $colorTextWhite;
-    @include font(700, 14px, 1, '');
-    text-transform: uppercase;
-    text-align: center;
+    flex-basis: calc((100% - 14px) / 2);
+    flex-grow: 1;
+    max-width: 220px;
+    height: 52px;
+    border: none;
+    background-color: $colorAccent;
+}
+
+.configurator__btn.disabled {
     background-color: $colorPrimaryGray;
-    transition: background-color $baseTransition;
-    &:hover,
-    &:focus {
-        background-color: $colorButtonHover;
-    }
+    cursor: not-allowed;
 }
