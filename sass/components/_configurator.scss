@@ -13,6 +13,7 @@
 }
 
 .configurator__item {
+    cursor: default;
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,8 +24,12 @@
     &--current {
         border: 1px solid $colorSquareGreen;
     }
+    &--clickabled {
+        cursor: pointer;
+    }
     &:not(:last-child):after {
         content: '';
+        cursor: default;
         position: absolute;
         width: 36px;
         height: 1px;
@@ -43,23 +48,18 @@
     color: $colorTextWhite;
     @include font(400, 14px, calc(23 / 14), 0.10998px);
     background-color: $colorPrimaryGray;
-    &--current {
+    &--used {
         background-color: $colorSquareGreen;
     }
 }
 
 .configurator__controls {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    @include for-size(mobile-only) {
-        flex-direction: column;
-        gap: 10px;
-    }
-    @include for-size(tablet) {
-        gap: 14px;
-    }
+    gap: 10px;
 }
 
 .configurator__caption {
@@ -75,12 +75,27 @@
 }
 
 .configurator__img {
-    width: 100%;
-    max-width: 386px;
+    height: 192px;
     margin: 0 auto 40px;
     @include for-size(desktop) {
         margin-bottom: 58px;
     }
+}
+
+.configurator__img--home {
+    max-width: 387px;
+}
+
+.configurator__img--gadjets {
+    max-width: 185px;
+}
+
+.configurator__img--speed {
+    max-width: 192px;
+}
+
+.configurator__img--multiple {
+    max-width: 208px;
 }
 
 .configurator__label {

@@ -419,8 +419,8 @@
                 <h2 class="selection__title">Find your eero system</h2>
                 <div class="configurator">
                     <ul class="configurator__counter">
-                        <li class="configurator__item configurator__item--current">
-                            <span class="configurator__dots configurator__dots--current">1</span>
+                        <li class="configurator__item configurator__item--current configurator__item--clickabled">
+                            <span class="configurator__dots configurator__dots--used">1</span>
                         </li>
                         <li class="configurator__item">
                             <span class="configurator__dots">2</span>
@@ -433,82 +433,84 @@
                         </li>
                     </ul>
                     <div class="configurator__box">
-                        <form class="home" action="#">
-                            <img class="configurator__img" src="./img/selection/home@1x.png" width="386">
-                            </img>
-                            <div class="configurator__controls configurator__controls--home">
-                                <span class="configurator__caption">I have a</span>
-                                <div class="configurator__group" role="group">
-                                    <label id="home-s" for="size-s"
-                                        class="configurator__label configurator__label--smaller">smaller
-                                    </label>
-                                    <input
-                                        class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
-                                        type="radio" name="size" id="size-s">
-                                    <label id="home-m" for="size-m"
-                                        class="configurator__label configurator__label--medium">medium
-                                    </label>
-                                    <input class="configurator__checkbox configurator__checkbox--medium visually-hidden"
-                                        type="radio" name="size" id="size-m">
-                                    <label id="home-l" for="size-l"
-                                        class="configurator__label configurator__label--larger">larger
-                                    </label>
-                                    <input class="configurator__checkbox configurator__checkbox--larger visually-hidden"
-                                        type="radio" name="size" id="size-l">
+                        <form action="#">
+                            <div class="configurator__page configurator__home" aria-expanded="false">
+                                <img class="configurator__img configurator__img--home" src="./img/selection/home.svg"
+                                    width="387" height="192" alt="home">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">I have a</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="home-s" for="size-s" class="configurator__label">smaller
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="size-s">
+                                        <label id="home-m" for="size-m" class="configurator__label">medium
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="size-m">
+                                        <label id="home-l" for="size-l" class="configurator__label">larger
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="size-l">
+                                    </div>
+                                    <span class="configurator__caption">home</span>
                                 </div>
-                                <span class="configurator__caption">home.</span>
                             </div>
-                        </form>
-                        <form class="gadjets visually-hidden" action="#">
-                            <img class="configurator__img" src="./img/selection/home@1x.png" width="386">
-                            </img>
-                            <div class="configurator__controls configurator__controls--home">
-                                <span class="configurator__caption">I have a</span>
-                                <div class="configurator__group" role="group">
-                                    <label id="home-s" for="size-s"
-                                        class="configurator__label configurator__label--smaller">smaller
-                                    </label>
-                                    <input
-                                        class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
-                                        type="radio" name="size" id="size-s">
-                                    <label id="home-m" for="size-m"
-                                        class="configurator__label configurator__label--medium">medium
-                                    </label>
-                                    <input class="configurator__checkbox configurator__checkbox--medium visually-hidden"
-                                        type="radio" name="size" id="size-m">
-                                    <label id="home-l" for="size-l"
-                                        class="configurator__label configurator__label--larger">larger
-                                    </label>
-                                    <input class="configurator__checkbox configurator__checkbox--larger visually-hidden"
-                                        type="radio" name="size" id="size-l">
+                            <div class="configurator__page configurator__gadjets visually-hidden" aria-expanded="false">
+                                <img class="configurator__img configurator__img--gadjets"
+                                    src="./img/selection/gadjets.svg" width="185" height="192" alt="gadjets">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">My home has</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="gadjets-s" for="count-s" class="configurator__label">less than 10
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="count" id="count-s">
+                                        <label id="gadjets-m" for="count-m" class="configurator__label">10 to 30
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="count" id="count-m">
+                                        <label id="gadjets-l" for="count-l" class="configurator__label">more than 30
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="count" id="count-l">
+                                    </div>
+                                    <span class="configurator__caption">connected devices</span>
                                 </div>
-                                <span class="configurator__caption">home.</span>
                             </div>
-                        </form>
-                        <form class="speed visually-hidden" action="#">
-                            <img class="configurator__img" src="./img/selection/home@1x.png" width="386">
-                            </img>
-                            <div class="configurator__controls configurator__controls--home">
-                                <span class="configurator__caption">I have a</span>
-                                <div class="configurator__group" role="group">
-                                    <label id="home-s" for="size-s"
-                                        class="configurator__label configurator__label--smaller">smaller
-                                    </label>
-                                    <input
-                                        class="configurator__checkbox configurator__checkbox--smaller visually-hidden"
-                                        type="radio" name="size" id="size-s">
-                                    <label id="home-m" for="size-m"
-                                        class="configurator__label configurator__label--medium">medium
-                                    </label>
-                                    <input class="configurator__checkbox configurator__checkbox--medium visually-hidden"
-                                        type="radio" name="size" id="size-m">
-                                    <label id="home-l" for="size-l"
-                                        class="configurator__label configurator__label--larger">larger
-                                    </label>
-                                    <input class="configurator__checkbox configurator__checkbox--larger visually-hidden"
-                                        type="radio" name="size" id="size-l">
+                            <div class="configurator__page configurator__speed visually-hidden" aria-expanded="false">
+                                <img class="configurator__img configurator__img--speed" src="./img/selection/speed.svg"
+                                    width="192" height="192" alt="speed">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">I need support for</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="speed-basic" for="speed-s" class="configurator__label">basic
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="speed" id="speed-s">
+                                        <label id="speed-fast" for="speed-m" class="configurator__label">fast
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="speed" id="speed-m">
+                                        <label id="speed-gigabit" for="speed-l" class="configurator__label">gigabit
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="speed" id="speed-l">
+                                    </div>
+                                    <span class="configurator__caption">speeds</span>
                                 </div>
-                                <span class="configurator__caption">home.</span>
+                            </div>
+                            <div class="configurator__page configurator__multiple visually-hidden"
+                                aria-expanded="false">
+                                <img class="configurator__img configurator__img--multiple"
+                                    src="./img/selection/multiple.svg" width="208" height="192" alt="multiple">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">I</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="multiple-yes" for="multiple-y" class="configurator__label">have
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="multiple-y">
+                                        <label id="multiple-no" for="multiple-n" class="configurator__label">don`t have
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="multiple-n">
+                                    </div>
+                                    <span class="configurator__caption">an ethernet connection in multiple rooms</span>
+                                </div>
                             </div>
                         </form>
                         <div class="configurator__btn-wrapper">

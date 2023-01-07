@@ -2016,6 +2016,7 @@ img {
 }
 
 .configurator__item {
+  cursor: default;
   position: relative;
   display: flex;
   justify-content: center;
@@ -2027,8 +2028,12 @@ img {
 .configurator__item--current {
   border: 1px solid #00b68c;
 }
+.configurator__item--clickabled {
+  cursor: pointer;
+}
 .configurator__item:not(:last-child):after {
   content: "";
+  cursor: default;
   position: absolute;
   width: 36px;
   height: 1px;
@@ -2050,26 +2055,17 @@ img {
   letter-spacing: 0.10998px;
   background-color: #999999;
 }
-.configurator__dots--current {
+.configurator__dots--used {
   background-color: #00b68c;
 }
 
 .configurator__controls {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-}
-@media screen and (max-width: 1023.98px) {
-  .configurator__controls {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .configurator__controls {
-    gap: 14px;
-  }
+  gap: 10px;
 }
 
 .configurator__caption {
@@ -2087,14 +2083,29 @@ img {
 }
 
 .configurator__img {
-  width: 100%;
-  max-width: 386px;
+  height: 192px;
   margin: 0 auto 40px;
 }
 @media screen and (min-width: 1440px) {
   .configurator__img {
     margin-bottom: 58px;
   }
+}
+
+.configurator__img--home {
+  max-width: 387px;
+}
+
+.configurator__img--gadjets {
+  max-width: 185px;
+}
+
+.configurator__img--speed {
+  max-width: 192px;
+}
+
+.configurator__img--multiple {
+  max-width: 208px;
 }
 
 .configurator__label {
