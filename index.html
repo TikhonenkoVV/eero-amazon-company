@@ -211,8 +211,8 @@
         </section>
         <section class="smart">
             <div class="smart__overlay"></div>
-            <div class="swiper-container-smart">
-                <div class="swiper-wrapper swiper-wrapper-smart">
+            <div class="smart__swiper-container">
+                <div class="swiper-wrapper smart__swiper-wrapper">
                     <div class="swiper-slide">
                         <div>
                             <picture>
@@ -228,7 +228,7 @@
                                             ./img/smart/light-desktop@2x.jpg 2x" type="image/jpg">
                                 <source media="(min-width: 1440px)" srcset="./img/smart/light-desktop@1x.webp 1x,
                                             ./img/smart/light-desktop@2x.webp 2x" type="image/webp">
-                                <img class="sw-slide" srcset="./img/smart/light-mobile@1x.jpg 1x,
+                                <img class="smart__swiper-slide" srcset="./img/smart/light-mobile@1x.jpg 1x,
                                              ./img/smart/light-mobile@2x.jpg 2x" src="./img/smart/light-mobile@1x.jpg"
                                     alt="двомісний номер">
                             </picture>
@@ -249,7 +249,7 @@
                                             ./img/smart/lock-desktop@2x.jpg 2x" type="image/jpg">
                                 <source media="(min-width: 1440px)" srcset="./img/smart/lock-desktop@1x.webp 1x,
                                             ./img/smart/lock-desktop@2x.webp 2x" type="image/webp">
-                                <img class="sw-slide" srcset="./img/smart/lock-mobile@1x.jpg 1x,
+                                <img class="smart__swiper-slide" srcset="./img/smart/lock-mobile@1x.jpg 1x,
                                             ./img/smart/lock-mobile@2x.jpg 2x" src="./img/smart/lock-mobile@1x.jpg"
                                     alt="двомісний номер">
                             </picture>
@@ -270,7 +270,7 @@
                                             ./img/smart/plug-desktop@2x.jpg 2x" type="image/jpg">
                                 <source media="(min-width: 1440px)" srcset="./img/smart/plug-desktop@1x.webp 1x,
                                             ./img/smart/plug-desktop@2x.webp 2x" type="image/webp">
-                                <img class="sw-slide" srcset="./img/smart/plug-mobile@1x.jpg 1x,
+                                <img class="smart__swiper-slide" srcset="./img/smart/plug-mobile@1x.jpg 1x,
                                             ./img/smart/plug-mobile@2x.jpg 2x" src="./img/smart/plug-mobile@1x.jpg"
                                     alt="двомісний номер">
                             </picture>
@@ -309,7 +309,7 @@
                     Learn More
                 </button>
 
-                <ul class="swiper-pagination smart__box">
+                <ul class="smart__swiper-pagination smart__box">
                     <li class="smart__box-item"> </li>
                     <li class="smart__box-item"> </li>
                     <li class="smart__box-item"> </li>
@@ -435,8 +435,8 @@
                     <div class="configurator__box">
                         <form action="#">
                             <div class="configurator__page configurator__home" aria-expanded="false">
-                                <img class="configurator__img configurator__img--home" src="./img/selection/home.svg"
-                                    width="387" height="192" alt="home">
+                                <img class="configurator__img" src="./img/selection/home.svg" width="387" height="192"
+                                    alt="home">
                                 </img>
                                 <div class="configurator__controls">
                                     <span class="configurator__caption">I have a</span>
@@ -455,8 +455,8 @@
                                 </div>
                             </div>
                             <div class="configurator__page configurator__gadjets visually-hidden" aria-expanded="false">
-                                <img class="configurator__img configurator__img--gadjets"
-                                    src="./img/selection/gadjets.svg" width="185" height="192" alt="gadjets">
+                                <img class="configurator__img" src="./img/selection/gadjets.svg" width="185"
+                                    height="192" alt="gadjets">
                                 </img>
                                 <div class="configurator__controls">
                                     <span class="configurator__caption">My home has</span>
@@ -475,8 +475,8 @@
                                 </div>
                             </div>
                             <div class="configurator__page configurator__speed visually-hidden" aria-expanded="false">
-                                <img class="configurator__img configurator__img--speed" src="./img/selection/speed.svg"
-                                    width="192" height="192" alt="speed">
+                                <img class="configurator__img" src="./img/selection/speed.svg" width="192" height="192"
+                                    alt="speed">
                                 </img>
                                 <div class="configurator__controls">
                                     <span class="configurator__caption">I need support for</span>
@@ -496,8 +496,8 @@
                             </div>
                             <div class="configurator__page configurator__multiple visually-hidden"
                                 aria-expanded="false">
-                                <img class="configurator__img configurator__img--multiple"
-                                    src="./img/selection/multiple.svg" width="208" height="192" alt="multiple">
+                                <img class="configurator__img" src="./img/selection/multiple.svg" width="208"
+                                    height="192" alt="multiple">
                                 </img>
                                 <div class="configurator__controls">
                                     <span class="configurator__caption">I</span>
@@ -521,6 +521,143 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <h1 class="offer__title">Turns out, people love great wifi.</h1>
+                <div class="offer__swiper-container">
+                    <div class="offer__swiper-pagination">
+                        <p class="offer__link offer__link--current link">Setup</p>
+                        <p class="offer__link link">Coverage</p>
+                        <p class="offer__link link">Reliability</p>
+                        <p class="offer__link link">Security</p>
+                        </li>
+                    </div>
+                    <div class="swiper-wrapper offer__swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="offer__img-wrapper">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-1-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-1-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-1-mobile@1x.webp 1x,
+                                                ./img/offer/offer-1-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-1-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-1-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-1-tablet@1x.webp 1x,
+                                                ./img/offer/offer-1-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-1-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-1-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-1-tablet@1x.webp 1x,
+                                                ./img/offer/offer-1-tablet@2x.webp 2x" type="image/webp">
+                                <img class="offer__img" srcset="./img/offer/offer-1-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-1-mobile@2x.jpg 2x"
+                                    src="./img/offer/offer-1-mobile@1x.jpg" alt="двомісний номер">
+                            </picture>
+                            <div class="offer__swiper-slide-wrapper">
+                                <p class="swiper-slide-caption">"Setting up our eeros was a breeze thanks to the plug
+                                    and play installation. The whole experience was life changing compared to other
+                                    routers we’ve used."</p>
+                                <div class="swiper-slide-rankings">
+                                    <p class="swiper-slide-item">The Rankings</p>
+                                    <p class="swiper-slide-item">Seattle, WA | 4Bedroom house</p>
+                                    <p class="swiper-slide-item">3,300 sq. ft.</p>
+                                    <p class="swiper-slide-item">Use eero 3-pack</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="offer__img-wrapper">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-2-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-2-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-2-mobile@1x.webp 1x,
+                                                ./img/offer/offer-2-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-2-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-2-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-2-tablet@1x.webp 1x,
+                                                ./img/offer/offer-2-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-2-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-2-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-2-tablet@1x.webp 1x,
+                                                ./img/offer/offer-2-tablet@2x.webp 2x" type="image/webp">
+                                <img class="offer__img" srcset="./img/offer/offer-2-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-2-mobile@2x.jpg 2x"
+                                    src="./img/offer/offer-2-mobile@1x.jpg" alt="двомісний номер">
+                            </picture>
+                            <div class="offer__swiper-slide-wrapper">
+                                <p class="swiper-slide-caption">"Eero’s mesh technology uses multiple wifi devices to
+                                    blanket your whole home in coverage. With the right system for your home, you can
+                                    work, stream, game, and chat—without missing a beat."</p>
+                                <div class="swiper-slide-rankings">
+                                    <p class="swiper-slide-item">The Rankings</p>
+                                    <p class="swiper-slide-item">Seattle, WA | 4Bedroom house</p>
+                                    <p class="swiper-slide-item">3,300 sq. ft.</p>
+                                    <p class="swiper-slide-item">Use eero 3-pack</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="offer__img-wrapper">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-3-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-3-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-3-mobile@1x.webp 1x,
+                                                ./img/offer/offer-3-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-3-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-3-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-3-tablet@1x.webp 1x,
+                                                ./img/offer/offer-3-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-3-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-3-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-3-tablet@1x.webp 1x,
+                                                ./img/offer/offer-3-tablet@2x.webp 2x" type="image/webp">
+                                <img class="offer__img" srcset="./img/offer/offer-3-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-3-mobile@2x.jpg 2x"
+                                    src="./img/offer/offer-3-mobile@1x.jpg" alt="двомісний номер">
+                            </picture>
+                            <div class="offer__swiper-slide-wrapper">
+                                <p class="swiper-slide-caption">"Say goodbye to dead spots, buffering, and dropped
+                                    calls. Get a consistently strong signal throughout your home so you
+                                    can stream, game, and work with confidence."</p>
+                                <div class="swiper-slide-rankings">
+                                    <p class="swiper-slide-item">The Rankings</p>
+                                    <p class="swiper-slide-item">Seattle, WA | 4Bedroom house</p>
+                                    <p class="swiper-slide-item">3,300 sq. ft.</p>
+                                    <p class="swiper-slide-item">Use eero 3-pack</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="offer__img-wrapper">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-4-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-4-mobile@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1023px)" srcset="./img/offer/offer-4-mobile@1x.webp 1x,
+                                                ./img/offer/offer-4-mobile@2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-4-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-4-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(max-width: 1439px)" srcset="./img/offer/offer-4-tablet@1x.webp 1x,
+                                                ./img/offer/offer-4-tablet@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-4-tablet@1x.jpg 1x,
+                                                ./img/offer/offer-4-tablet@2x.jpg 2x" type="image/jpg">
+                                <source media="(min-width: 1440px)" srcset="./img/offer/offer-4-tablet@1x.webp 1x,
+                                                ./img/offer/offer-4-tablet@2x.webp 2x" type="image/webp">
+                                <img class="offer__img" srcset="./img/offer/offer-4-mobile@1x.jpg 1x,
+                                                ./img/offer/offer-4-mobile@2x.jpg 2x"
+                                    src="./img/offer/offer-4-mobile@1x.jpg" alt="двомісний номер">
+                            </picture>
+                            <div class="offer__swiper-slide-wrapper">
+                                <p class="swiper-slide-caption">Manage wifi for everyone at home right from the eero
+                                    app. Ongoing updates bring you the latest eero features while also
+                                    helping to keep your network safe and secure.</p>
+                                <div class="swiper-slide-rankings">
+                                    <p class="swiper-slide-item">The Rankings</p>
+                                    <p class="swiper-slide-item">Seattle, WA | 4Bedroom house</p>
+                                    <p class="swiper-slide-item">3,300 sq. ft.</p>
+                                    <p class="swiper-slide-item">Use eero 3-pack</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn offer__btn">Shop all eero systems</button>
             </div>
         </section>
         <footer class="footer">

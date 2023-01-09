@@ -538,30 +538,6 @@ img {
   width: 100%;
 }
 
-.swiper-container-smart {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-@media screen and (max-width: 413px) {
-  .sw-slide {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-  }
-}
-
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -1589,6 +1565,30 @@ img {
   z-index: 3;
 }
 
+.smart__swiper-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media screen and (max-width: 413px) {
+  .smart__swiper-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
 .smart__wrapper {
   display: flex;
   flex-direction: column;
@@ -1979,7 +1979,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .selection {
-    padding-bottom: 106px;
+    padding-bottom: 105px;
   }
 }
 
@@ -2070,8 +2070,15 @@ img {
 
 .configurator__caption {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.1111111111;
+  font-size: 14px;
+  line-height: 1;
+}
+@media screen and (min-width: 414px) {
+  .configurator__caption {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+  }
 }
 
 .configurator__group {
@@ -2083,29 +2090,19 @@ img {
 }
 
 .configurator__img {
-  height: 192px;
+  height: auto;
+  width: 100%;
   margin: 0 auto 40px;
+}
+@media screen and (min-width: 1024px) {
+  .configurator__img {
+    max-width: 384px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .configurator__img {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
-}
-
-.configurator__img--home {
-  max-width: 387px;
-}
-
-.configurator__img--gadjets {
-  max-width: 185px;
-}
-
-.configurator__img--speed {
-  max-width: 192px;
-}
-
-.configurator__img--multiple {
-  max-width: 208px;
 }
 
 .configurator__label {
@@ -2116,11 +2113,18 @@ img {
   padding: 0;
   height: 60px;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 14px;
   line-height: 1;
   color: rgba(64, 64, 64, 0.3);
   border: 2px solid #c0c0c0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 414px) {
+  .configurator__label {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1;
+  }
 }
 .configurator__label:hover, .configurator__label:focus, .configurator__label--current {
   background-color: #ffffff;
@@ -2146,6 +2150,78 @@ img {
 .configurator__btn.disabled {
   background-color: #999999;
   cursor: not-allowed;
+}
+
+.offer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.offer__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.offer__swiper-container {
+  overflow: hidden;
+}
+
+.offer__swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 347px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.offer__link.link {
+  color: #404040;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.offer__link.link::after {
+  background-color: #404040;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer__link--current.link {
+  color: #2468ff;
+}
+.offer__link--current.link::after {
+  background-color: #2468ff;
+}
+
+.offer__img-wrapper {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.offer__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__swiper-slide-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-slide-caption {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.swiper-slide-rankings {
+  display: none;
+}
+
+.offer__btn {
+  width: 220px;
+  height: 50px;
+  border: none;
+  background-color: #2468ff;
 }
 
 .footer {

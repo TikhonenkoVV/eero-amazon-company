@@ -63,7 +63,10 @@
 }
 
 .configurator__caption {
-    @include font(400, 18px, calc(20 / 18), '');
+    @include font(400, 14px, 1, '');
+    @include for-size(mobile) {
+        @include font(400, 18px, 1, '');
+    }
 }
 
 .configurator__group {
@@ -75,27 +78,15 @@
 }
 
 .configurator__img {
-    height: 192px;
+    height: auto;
+    width: 100%;
     margin: 0 auto 40px;
-    @include for-size(desktop) {
-        margin-bottom: 58px;
+    @include for-size(tablet) {
+        max-width: 384px;
     }
-}
-
-.configurator__img--home {
-    max-width: 387px;
-}
-
-.configurator__img--gadjets {
-    max-width: 185px;
-}
-
-.configurator__img--speed {
-    max-width: 192px;
-}
-
-.configurator__img--multiple {
-    max-width: 208px;
+    @include for-size(desktop) {
+        margin-bottom: 60px;
+    }
 }
 
 .configurator__label {
@@ -105,7 +96,10 @@
     flex-grow: 1;
     padding: 0;
     height: 60px;
-    @include font(400, 21px, 1, '');
+    @include font(400, 14px, 1, '');
+    @include for-size(mobile) {
+        @include font(400, 21px, 1, '');
+    }
     color: rgba(64, 64, 64, 0.3);
     border: 2px solid #c0c0c0;
     transition: color $baseTransition, background-color $baseTransition,

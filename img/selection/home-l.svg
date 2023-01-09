@@ -2,14 +2,36 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="774"
-   height="384"
-   viewBox="0 0 204.7875 101.6"
+   width="384"
+   height="191"
+   viewBox="0 0 101.6 50.535417"
    version="1.1"
    id="svg5"
+   sodipodi:docname="home-l.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview119"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.42447917"
+     inkscape:cx="90.699386"
+     inkscape:cy="307.43558"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2">
     <linearGradient
@@ -32,7 +54,8 @@
     </clipPath>
   </defs>
   <g
-     id="layer1">
+     id="layer1"
+     transform="matrix(0.49741021,0,0,0.49741021,-0.13169654,-7.32538e-4)">
     <g
        id="rect195720" />
     <g
@@ -539,11 +562,11 @@
        transform="scale(0.26458333)" />
     <path
        id="rect10289"
-       style="opacity:1;fill:#797a7c;stroke-width:0;fill-opacity:1"
+       style="opacity:1;fill:#797a7c;fill-opacity:1;stroke-width:0"
        d="M 33.673382,67.214127 H 170.97042 v 0.999942 H 33.673382 Z" />
     <path
        id="rect10472"
-       style="opacity:1;fill:#797a7c;stroke-width:0;fill-opacity:1"
+       style="opacity:1;fill:#797a7c;fill-opacity:1;stroke-width:0"
        d="M 29.789379,32.546993 64.582605,17.520003 102.6547,1.0770778 l 35.33014,15.4429852 36.64531,16.018145 -6.45276,-15.018187 -27.90535,-1.8e-5 -2.2872,-0.99994 30.86228,1.7e-5 7.13695,16.609824 h -2.25878 L 102.6547,2.1648671 30.684933,33.129905 166.93708,33.129904 102.6547,5.6266728 37.966141,33.129904 H 35.740956 L 102.6547,4.5838414 169.54157,33.129904 h 4.18372 2.25878 l -0.99994,0.999937 H 29.439015 v 1.210778 H 174.98413 v -1.210778 l 1.00002,-0.999921 -8e-5,3.211155 -4.01369,-1.42e-4 h -0.99994 -137.297044 -0.99994 l -4.234381,1.42e-4 v -3.211171 l 7.137032,-16.609841 h 31.321602 l -2.315104,0.99994 H 36.245833 Z" />
   </g>
 </svg>
