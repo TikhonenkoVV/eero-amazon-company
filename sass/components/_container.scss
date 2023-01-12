@@ -4,8 +4,11 @@
     @include for-size(mobile) {
         width: 414px;
     }
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
+        width: 960px;
         padding: 0 30px;
+    }
+    @include for-size(tablet) {
         width: 1024px;
     }
     @include for-size(desktop) {

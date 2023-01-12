@@ -1,7 +1,7 @@
 .about {
     padding-top: 40px;
     padding-bottom: 40px;
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         padding-top: 80px;
         padding-bottom: 51px;
     }
@@ -16,7 +16,7 @@
     text-align: center;
     margin-bottom: 40px;
     @include font(400, 28px, calc(30 / 28), '');
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         margin-bottom: 83px;
         @include font(400, 50px, calc(60 / 50), '');
     }
@@ -24,12 +24,15 @@
 
 .about__list {
     text-align: center;
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         display: flex;
-        gap: 90px;
+        gap: 80px;
         width: 798px;
         height: 427px;
         margin: 0 auto;
+    }
+    @include for-size(tablet) {
+        gap: 90px;
     }
     @include for-size(desktop) {
         gap: 164px;
@@ -44,10 +47,13 @@
             margin-bottom: 40px;
         }
     }
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-basis: calc((100% - 160px) / 3);
+    }
+    @include for-size(tablet) {
         flex-basis: calc((100% - 180px) / 3);
     }
     @include for-size(desktop) {

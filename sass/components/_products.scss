@@ -1,27 +1,26 @@
 .products {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 580px;
-    padding-bottom: 80px;
     text-align: center;
     background-color: $colorBackgroundHero;
-    @include for-size(mobile-only) {
-        padding: 0px;
-    }
     @include for-size(mobile) {
         width: 414px;
     }
-    @include for-size(tablet) {
-        width: 1024px;
+    @include for-size(tablet-medium) {
+        width: 960px;
         padding-top: 400px;
-        padding-bottom: 80px;
+        padding-bottom: 28px;
         background-image: url(../img/products/products-eero-tablet@1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         @include for-size(retina) {
+            padding-bottom: 25px;
             background-image: url(../img/products/products-eero-tablet@2x.jpg);
         }
+    }
+    @include for-size(tablet) {
+        width: 1024px;
     }
     @include for-size(desktop) {
         width: 1440px;
@@ -35,9 +34,12 @@
 }
 
 .products__wrapper {
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         display: flex;
         gap: 34px;
+        margin-bottom: 20px;
+    }
+    @include for-size(tablet) {
         margin-bottom: 25px;
     }
     @include for-size(desktop) {
@@ -55,6 +57,9 @@
         padding-bottom: 38px;
         padding-left: 30px;
         padding-right: 30px;
+    }
+    @include for-size(tablet-medium) {
+        flex-basis: calc((100% - 30px) / 2);
     }
     @include for-size(tablet) {
         flex-basis: calc((100% - 34px) / 2);
@@ -128,11 +133,14 @@
 .products__title {
     @include font(400, 28px, calc(32 / 28), '');
     margin-bottom: 20px;
+    @include for-size(tablet-medium) {
+        @include font(400, 32px, calc(40 / 32), '');
+    }
     @include for-size(tablet) {
-        @include font('', 36px, calc(40 / 36), '');
+        @include font(400, 36px, calc(40 / 36), '');
     }
     @include for-size(desktop) {
-        @include font('', 42px, calc(48 / 42), '');
+        @include font(400, 42px, calc(48 / 42), '');
     }
 }
 

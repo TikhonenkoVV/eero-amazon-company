@@ -1,107 +1,164 @@
 .footer {
     background-color: $colorBackgroundDark;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.footer__items {
-    font-size: 17px;
-    line-height: 1.39;
     color: $colorTextWhite;
-    font-family: 'Roboto';
-
-    &:not(:last-child) {
-        margin-bottom: 8px;
+    @include for-size(tablet-medium) {
+        padding-top: 80px;
+    }
+    @include for-size(desktop) {
+        padding-top: 90px;
+        padding-bottom: 100px;
     }
 }
 
-.footer__box-one {
+.footer__container {
+    @include for-size(desktop) {
+        padding-left: 190px;
+        padding-right: 190px;
+    }
+}
+
+.footer__logo {
+    display: block;
+    width: 86px;
+    height: 39px;
+    margin-bottom: 30px;
+    @include for-size(mobile-only) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 58px;
+    }
+}
+
+.footer__logo-icon {
+    fill: $colorTextWhite;
+}
+
+.footer__box-wrapper {
+    @include for-size(tablet-medium) {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 40px;
+    }
+    @include for-size(desktop) {
+        column-gap: 50px;
+    }
+}
+
+.footer__nav-box {
     display: flex;
-    gap: 92px;
+    @include for-size(mobile-only) {
+        margin-bottom: 30px;
+    }
+    @include for-size(tablet-medium) {
+        width: 410px;
+    }
+    @include for-size(desktop) {
+        width: 500px;
+    }
 }
 
-.footer-title {
-    font-size: 14px;
-    line-height: 1.6;
-    letter-spacing: 0.1px;
-    color: $colorTextWhite;
+.footer__nav {
+    width: 50%;
 }
 
-.footer__field-label {
-    font-size: 36px;
-    line-height: 48px;
-    color: $colorTextWhite;
-    margin-bottom: 1px;
+.footer__items {
+    @include font('', 16px, calc(20 / 16), '');
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    @include for-size(tablet) {
+        @include font('', 17px, calc(25 / 17), '');
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+}
+
+.footer__form-box {
+    @include for-size(mobile-only) {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    @include for-size(tablet) {
+        flex-grow: 1;
+    }
+}
+
+.footer__caption {
+    @include font('', 36px, calc(48 / 36), '');
+}
+
+.footer__text {
+    @include font('', 18px, calc(25 / 18), '');
+    margin-bottom: 71px;
+}
+
+.footer__form {
+    @include for-size(tablet) {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+.footer-form__field {
+    display: block;
+    flex-grow: 1;
 }
 
 .footer-form__input {
-    padding: 13px 0px;
-    width: 293px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+    width: 100%;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid $colorTextWhite;
-
-    margin-right: 28px;
     background-color: $colorBackgroundDark;
-    font-size: 14px;
-    line-height: 17px;
+    @include font('', 14px, calc(17 / 14), '');
     text-transform: uppercase;
-
-    color: $colorTextPlaceholder;
 }
 
-.footer__field-title {
-    font-size: 18px;
-    line-height: 25px;
-    color: $colorTextWhite;
-    margin-bottom: 69px;
-}
-
-.footer__logo {
-    padding-left: 175px;
-    margin-bottom: 60px;
-}
-.footer__logo-icon {
-    fill: $colorTextWhite;
-}
-.footer__gen-box {
-    padding-left: 175px;
-    display: flex;
-    margin-bottom: 52px;
-}
-
-.footer__box-two {
-    margin-left: 93px;
-}
-
-.footer__soc-set {
-    padding-left: 175px;
-    display: flex;
-    gap: 277px;
-}
-
-.footer-button {
-    font-size: 14px;
-    line-height: 1.22;
-
-    text-align: center;
+.footer-btn {
     background-color: $colorBackgroundDark;
-    border-radius: 0px;
     height: 53px;
     width: 191px;
-    text-transform: uppercase;
     border: 1px solid $colorTextWhite;
-    color: $colorTextWhite;
-    text-align: center;
     transition: background-color $baseTransition;
     &:hover,
     &:focus {
-        background-color: $colorButtonHover;
+        background-color: $colorAccent;
+    }
+}
+
+.footer-copyright {
+    @include font('', 13px, calc(23 / 13), '');
+    @include for-size(mobile-only) {
+        text-align: center;
+    }
+    @include for-size(tablet-medium) {
+        width: 410px;
+        order: 1;
+    }
+    @include for-size(desktop) {
+        width: 500px;
+    }
+}
+
+.footer__socials {
+    justify-content: center;
+    @include for-size(mobile-only) {
+        margin-bottom: 30px;
+    }
+    @include for-size(tablet-medium) {
+        order: 2;
     }
 }

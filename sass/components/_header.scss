@@ -52,6 +52,10 @@
 .header__logo {
     z-index: 6;
     padding: 10px 0;
+    @include for-size(tablet-medium) {
+        margin-right: 50px;
+        padding: 10px 0;
+    }
     @include for-size(tablet) {
         margin-right: 16px;
         padding: 15px 4px;
@@ -106,7 +110,7 @@
 }
 
 .header__nav {
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         display: flex;
     }
 }
@@ -126,14 +130,17 @@
         color: $colorAccent;
     }
     @include font(400, 36px, 1.2223, 0.11px);
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         display: block;
-        padding: 29px 20px;
-        padding-top: 29px;
-        padding-bottom: 29px;
+        padding-top: 14px;
+        padding-bottom: 14px;
         padding-left: 10px;
         padding-right: 10px;
         @include font(400, 18px, 1.2223, 0.11px);
+    }
+    @include for-size(tablet) {
+        padding-top: 29px;
+        padding-bottom: 29px;
     }
     @include for-size(desktop) {
         padding-left: 20px;
@@ -161,24 +168,22 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 166px;
-    height: 100%;
-    margin-right: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: $colorBackgroundPrimary;
     padding: 0;
     border: none;
-    color: $colorTextWhite;
     text-transform: uppercase;
     @include font(400, 14px, 1, 0.11px);
-    background-color: $colorAccent;
     transition: background-color $baseTransition;
     @include for-size(mobile-only) {
-        width: 30px;
-        height: 30px;
-        margin-right: 0;
-        background: none;
     }
     @include for-size(tablet) {
+        width: 166px;
+        height: 100%;
         margin-right: -30px;
+        color: $colorTextWhite;
+        background-color: $colorAccent;
     }
     @include for-size(desktop) {
         margin-right: -34px;
@@ -190,15 +195,16 @@
 }
 
 .header__btn-cart-content {
-    @include for-size(mobile-only) {
-        display: none;
+    display: none;
+    @include for-size(tablet) {
+        display: block;
     }
 }
 
 .header__btn-cart-icon {
-    fill: $colorTextWhite;
-    @include for-size(mobile-only) {
-        fill: $colorBlack;
+    fill: $colorBlack;
+    @include for-size(tablet) {
+        fill: $colorTextWhite;
     }
 }
 

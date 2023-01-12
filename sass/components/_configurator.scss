@@ -81,7 +81,7 @@
     height: auto;
     width: 100%;
     margin: 0 auto 40px;
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         max-width: 384px;
     }
     @include for-size(desktop) {

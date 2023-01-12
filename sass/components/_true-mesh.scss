@@ -18,10 +18,10 @@
         margin-left: auto;
         margin-right: auto;
     }
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         @include font('', 50px, calc(60 / 50), '');
     }
-    @include for-size(tablet) {
+    @include for-size(desktop) {
         margin-bottom: 44px;
     }
 }
@@ -30,7 +30,7 @@
     max-width: 710px;
     margin-bottom: 28px;
     @include font('', 18px, calc(24 / 18), '');
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         margin-left: auto;
         margin-right: auto;
     }
@@ -55,7 +55,7 @@
 }
 
 .true-mesh__img {
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         margin-left: auto;
         margin-right: auto;
     }

@@ -47,7 +47,6 @@ const swiperOffer = new Swiper('.offer__swiper-container', {
 swiperOffer.on('slideChange', function () {
     const elChange = document.documentElement.querySelector('.offer__swiper-pagination');
     const iconChange = document.documentElement.querySelectorAll('.offer__link');
-    console.log(iconChange.length);
 
     iconChange.forEach(el => {
         el.classList.remove('offer__link--current');

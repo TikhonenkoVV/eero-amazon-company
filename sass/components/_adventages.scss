@@ -15,7 +15,7 @@
     max-width: 782px;
     margin-bottom: 50px;
     @include font(400, 30px, calc(40 / 30), '');
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 44px;
@@ -27,7 +27,7 @@
     max-width: 708px;
     margin-bottom: 50px;
     @include font('', 18px, calc(24 / 18), '');
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 82px;
