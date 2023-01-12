@@ -1,0 +1,82 @@
+.help-center {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: $colorBackgroundLightGray;
+    @include for-size(tablet-medium) {
+        padding-top: 80px;
+    }
+    @include for-size(desktop) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.help-center__title {
+    margin-bottom: 35px;
+    @include font(400, 30px, calc(40 / 30), '');
+    @include for-size(tablet-medium) {
+        @include font(400, 50px, calc(60 / 50), '');
+    }
+}
+
+.help-center__caption {
+    margin-bottom: 45px;
+    @include font('', 18px, calc(25 / 18), '');
+    @include for-size(mobile-only) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 46px;
+    }
+}
+
+.help-center__btn {
+    width: 220px;
+    height: 52px;
+    margin-bottom: 94px;
+    border: none;
+    background-color: $colorAccent;
+    @include for-size(desktop) {
+        margin-bottom: 90px;
+    }
+}
+
+.help-center__services {
+    display: flex;
+    @include for-size(mobile-only) {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    @include for-size(tablet-medium) {
+        justify-content: center;
+        gap: 50px;
+    }
+    @include for-size(desktop) {
+        gap: 86px;
+    }
+}
+
+.help-center__item {
+    @include font('', 18px, calc(24 / 18), '');
+    @include for-size(mobile-only) {
+        flex-basis: 50%;
+    }
+    @include for-size(tablet-medium) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+}
+
+.help-center__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include for-size(mobile-only) {
+        margin-bottom: 10px;
+    }
+}
