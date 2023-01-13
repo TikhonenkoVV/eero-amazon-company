@@ -4,8 +4,15 @@
 }
 
 .social-link {
+    display: flex;
     color: inherit;
-    transition: color $baseTransition;
+    &:hover,
+    &:focus {
+        animation-name: rotate-icon;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
 }
 .social-media__icon {
     fill: currentColor;
