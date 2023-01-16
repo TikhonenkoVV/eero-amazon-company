@@ -5,7 +5,7 @@
         width: 414px;
     }
     @include for-size(tablet-medium) {
-        width: 960px;
+        width: 768px;
         padding: 0 30px;
     }
     @include for-size(tablet) {

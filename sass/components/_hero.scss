@@ -2,13 +2,16 @@
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding-bottom: 68px;
+    padding-bottom: 67px;
     text-align: center;
     background-color: $colorBackgroundPrimary;
     color: $colorTextWhite;
     overflow: hidden;
     @include for-size(mobile-only) {
         padding-top: 74px;
+    }
+    @include for-size(tablet-medium-only) {
+        padding-bottom: 80px;
     }
     @include for-size(desktop) {
         padding-bottom: 98px;
@@ -33,6 +36,9 @@
 
 .hero__sticker {
     margin: 0 auto;
+    @include for-size(tablet-medium-only) {
+        width: 240px;
+    }
 }
 
 .slide-a,
@@ -68,11 +74,11 @@
 
 .hero__container {
     padding-bottom: 141px;
-    @include for-size(tablet) {
-        padding-bottom: 140px;
+    @include for-size(tablet-medium-only) {
+        padding-bottom: 109px;
     }
     @include for-size(desktop) {
-        padding-bottom: 270px;
+        padding-bottom: 271px;
     }
 }
 
@@ -86,11 +92,14 @@
     background-position: top;
     background-size: cover;
     @include for-size(tablet-medium) {
-        padding-top: 80px;
+        padding-top: 70px;
         background-image: $lg, url('../img/hero/hero-tablet@1x.jpg');
         @include for-size(retina) {
             background-image: $lg, url('../img/hero/hero-tablet@2x.jpg');
         }
+    }
+    @include for-size(tablet) {
+        padding-top: 80px;
     }
     @include for-size(desktop) {
         padding-top: 120px;
@@ -104,8 +113,11 @@
 .hero__title {
     @include font(400, 40px, 1.125, '');
     margin-bottom: 40px;
-    @include for-size(tablet-medium) {
-        @include font('', 72px, 1.1112, '');
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 11px;
+    }
+    @include for-size(tablet) {
+        @include font(400, 72px, calc(80 / 72), '');
         margin-bottom: 24px;
     }
 }
@@ -115,7 +127,11 @@
     padding: 0;
     margin-bottom: 20px;
     @include font(400, 20px, calc(24 / 20), '');
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 11px;
+    }
     @include for-size(tablet) {
+        @include font(400, 20px, calc(30 / 20), '');
         margin-bottom: 15px;
     }
 }

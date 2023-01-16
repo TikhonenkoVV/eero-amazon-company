@@ -6,7 +6,7 @@
     color: $colorTextWhite;
     background-color: $colorBackgroundDark;
     @include for-size(desktop) {
-        padding: 117px 0 124px;
+        padding: 120px 0;
     }
 }
 
@@ -19,35 +19,45 @@
         margin-right: auto;
     }
     @include for-size(tablet-medium) {
+        margin-bottom: 20px;
+        @include font('', 44px, calc(56 / 44), '');
+    }
+    @include for-size(tablet) {
         @include font('', 50px, calc(60 / 50), '');
+        margin-bottom: 25px;
     }
     @include for-size(desktop) {
-        margin-bottom: 44px;
+        margin-bottom: 45px;
     }
 }
 
 .true-mesh__description {
-    max-width: 710px;
-    margin-bottom: 28px;
+    max-width: 708px;
+    margin-bottom: 30px;
     @include font('', 18px, calc(24 / 18), '');
     @include for-size(tablet-medium) {
+        margin-bottom: 20px;
+    }
+    @include for-size(tablet) {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
     }
     @include for-size(desktop) {
-        margin-bottom: 41px;
+        margin-bottom: 40px;
     }
 }
 
 .true-mesh__btn {
-    width: 220px;
-    height: 50px;
     margin-bottom: 25px;
     border: 1px solid $colorAccent;
     background-color: $colorAccent;
     &:hover,
     &:focus {
         border-color: $colorTextWhite;
+    }
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 22px;
     }
     @include for-size(desktop) {
         margin-bottom: 50px;

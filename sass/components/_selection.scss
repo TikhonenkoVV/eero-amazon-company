@@ -1,13 +1,14 @@
 .selection {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     background-color: $colorBackgroundLightGray;
     @include for-size(tablet-medium) {
-        padding-top: 70px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     @include for-size(desktop) {
-        padding-bottom: 105px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -16,8 +17,14 @@
     margin: 0 auto 30px;
     text-align: center;
     @include font(400, 40px, calc(50 / 40), '');
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    @include for-size(tablet-medium) {
+        @include font('', 50px, calc(60 / 50), '');
+    }
     @include for-size(desktop) {
         margin-bottom: 40px;
-        @include font('', 50px, calc(60 / 50), '');
     }
 }

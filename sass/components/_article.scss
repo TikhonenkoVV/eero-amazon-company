@@ -1,0 +1,36 @@
+.article {
+    display: none;
+    text-align: center;
+    @include for-size(tablet-medium) {
+        display: block;
+        width: 768px;
+        margin: 0 auto;
+        padding-top: 160px;
+        padding-bottom: 160px;
+        color: $colorTextWhite;
+        background-color: $colorBackgroundPromoArticle;
+    }
+    @include for-size(tablet) {
+        width: 1024px;
+        padding-top: 202px;
+        padding-bottom: 202px;
+    }
+    @include for-size(desktop) {
+        width: 1440px;
+    }
+}
+
+.article__caption {
+    max-width: 824px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    @include font('', 36px, calc(40 / 36), '');
+    @include for-size(tablet) {
+        @include font('', 42px, calc(48 / 42), '');
+    }
+}
+
+.article__img {
+    margin: 0 auto;
+}

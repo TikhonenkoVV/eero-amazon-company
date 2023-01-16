@@ -7,8 +7,8 @@
         padding-bottom: 80px;
     }
     @include for-size(desktop) {
-        padding-top: 117px;
-        padding-bottom: 124px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -18,9 +18,13 @@
     }
 }
 .offer__title {
-    @include font(400, 40px, calc(60 / 40), '');
+    @include font(400, 36px, calc(48 / 36), '');
     margin-bottom: 30px;
     @include for-size(tablet-medium) {
+        @include font('', 46px, calc(60 / 46), '');
+    }
+    @include for-size(tablet) {
+        @include font('', 50px, calc(60 / 50), '');
         margin-bottom: 60px;
     }
     @include for-size(desktop) {
@@ -43,6 +47,9 @@
 .offer__swiper-slide {
     @include for-size(tablet-medium) {
         display: flex;
+        margin-bottom: 38px;
+    }
+    @include for-size(tablet) {
         margin-bottom: 40px;
     }
     @include for-size(desktop) {
@@ -62,7 +69,10 @@
     max-width: 347px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @include for-size(tablet) {
+        margin-bottom: 30px;
+    }
     @include for-size(desktop) {
         position: absolute;
         top: 183px;
@@ -92,7 +102,7 @@
 .offer__img-wrapper {
     display: block;
     @include for-size(mobile-only) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 
@@ -124,19 +134,19 @@
 .swiper-slide-caption {
     @include font('', 20px, calc(30 / 20), '');
     @include for-size(tablet-medium) {
-        @include font('', 29px, calc(44 / 29), '');
+        @include font('', 24px, calc(34 / 24), '');
     }
     @include for-size(tablet) {
-        @include font(400, 30px, calc(44 / 30), '');
+        @include font('', 30px, calc(44 / 30), '');
     }
     @include for-size(desktop) {
-        @include font(400, 36px, calc(52 / 36), '');
+        @include font('', 36px, calc(52 / 36), '');
     }
 }
 
 .offer__rankings {
     display: none;
-    @include for-size(tablet) {
+    @include for-size(desktop) {
         display: block;
     }
 }
@@ -150,8 +160,6 @@
 }
 
 .offer__btn {
-    width: 220px;
-    height: 50px;
     border: none;
     background-color: $colorAccent;
 }

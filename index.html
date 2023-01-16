@@ -17,7 +17,8 @@
     <main class="main">
         <header class="header">
             <div class="header__banner">
-                <p class="header__banner-text">Free 2-day shipping | 30-day money back guarantee</p>
+                <button class="header__banner-btn" type="button">Free shipping & 30% off Echo Dot when buying a
+                    set</button>
             </div>
             <div class="container header__container">
                 <a class="logo header__logo" href="./index.html">
@@ -152,9 +153,7 @@
                     you down, even as you add more devices.
                 </p>
                 <button type="button" class="btn promo__button">Find your eero system</button>
-                <div class="promo__wrapper">
-                    <img class="promo__img" src="./img/promo/devices.svg" alt="Drawn people at home">
-                </div>
+                <img class="promo__img" src="./img/promo/devices.svg" alt="Drawn people at home">
             </div>
         </section>
         <section class="products">
@@ -192,6 +191,14 @@
                 <a class="products__link link" href="#">Compare All Models</a>
             </div>
         </section>
+        <section class="article">
+            <div class="container">
+                <p class="article__caption">“eero combats frustrating Wi-Fi dead zones with an armada of little wireless
+                    routers.”
+                </p>
+                <img class="article__img" src="./img/wsj.svg" width="350" height="30" alt="The wall street journal">
+            </div>
+        </section>
         <section class="smart">
             <div class="smart__overlay"></div>
             <div class="smart__swiper-container">
@@ -199,9 +206,9 @@
                     <div class="swiper-slide">
                         <div>
                             <picture>
-                                <source media="(max-width: 959px)" srcset="./img/smart/light-mobile@1x.jpg 1x,
+                                <source media="(max-width: 767px)" srcset="./img/smart/light-mobile@1x.jpg 1x,
                                             ./img/smart/light-mobile@2x.jpg 2x" type="image/jpg">
-                                <source media="(max-width: 959px)" srcset="./img/smart/light-mobile@1x.webp 1x,
+                                <source media="(max-width: 767px)" srcset="./img/smart/light-mobile@1x.webp 1x,
                                             ./img/smart/light-mobile@2x.webp 2x" type="image/webp">
                                 <source media="(max-width: 1439px)" srcset="./img/smart/light-tablet@1x.jpg 1x,
                                             ./img/smart/light-tablet@2x.jpg 2x" type="image/jpg">
@@ -220,9 +227,9 @@
                     <div class="swiper-slide">
                         <div>
                             <picture>
-                                <source media="(max-width: 959px)" srcset="./img/smart/lock-mobile@1x.jpg 1x,
+                                <source media="(max-width: 767px)" srcset="./img/smart/lock-mobile@1x.jpg 1x,
                                             ./img/smart/lock-mobile@2x.jpg 2x" type="image/jpg">
-                                <source media="(max-width: 959px)" srcset="./img/smart/lock-mobile@1x.webp 1x,
+                                <source media="(max-width: 767px)" srcset="./img/smart/lock-mobile@1x.webp 1x,
                                             ./img/smart/lock-mobile@2x.webp 2x" type="image/webp">
                                 <source media="(max-width: 1439px)" srcset="./img/smart/lock-tablet@1x.jpg 1x,
                                             ./img/smart/lock-tablet@2x.jpg 2x" type="image/jpg">
@@ -241,9 +248,9 @@
                     <div class="swiper-slide">
                         <div>
                             <picture>
-                                <source media="(max-width: 959px)" srcset="./img/smart/plug-mobile@1x.jpg 1x,
+                                <source media="(max-width: 767px)" srcset="./img/smart/plug-mobile@1x.jpg 1x,
                                             ./img/smart/plug-mobile@2x.jpg 2x" type="image/jpg">
-                                <source media="(max-width: 959px)" srcset="./img/smart/plug-mobile@1x.webp 1x,
+                                <source media="(max-width: 767px)" srcset="./img/smart/plug-mobile@1x.webp 1x,
                                             ./img/smart/plug-mobile@2x.webp 2x" type="image/webp">
                                 <source media="(max-width: 1439px)" srcset="./img/smart/plug-tablet@1x.jpg 1x,
                                             ./img/smart/plug-tablet@2x.jpg 2x" type="image/jpg">
@@ -280,9 +287,9 @@
                             </svg>
                         </li>
                     </ul>
-                    <h2 class="section__title">Unlock your wifi’s potential</h2>
+                    <h2 class="smart__title">Unlock your wifi’s potential</h2>
                 </div>
-                <p class="section__text">Both eero 6 and eero Pro 6 feature a built-in Zigbee smart home hub, making it
+                <p class="smart__text">Both eero 6 and eero Pro 6 feature a built-in Zigbee smart home hub, making it
                     easy to
                     connect compatible devices with Alexa. So you can control certain lights, locks, plugs, and
                     moreвЂ”without
@@ -313,10 +320,10 @@
                 </p>
                 <picture>
                     <source srcset="./img/adventages/adventages-mobile@1x.webp 1x,
-                                    ./img/adventages/adventages-mobile@2x.webp 2x" media="(max-width: 959px)"
+                                    ./img/adventages/adventages-mobile@2x.webp 2x" media="(max-width: 767px)"
                         type="image/webp">
                     <source srcset="./img/adventages/adventages-mobile@1x.jpg 1x,
-                                    ./img/adventages/adventages-mobile@2x.jpg 2x" media="(max-width: 959px)">
+                                    ./img/adventages/adventages-mobile@2x.jpg 2x" media="(max-width: 767px)">
                     <source srcset="./img/adventages/adventages-tablet@1x.webp 1x,
                                     ./img/adventages/adventages-tablet@2x.webp 2x" media="(max-width: 1439px)"
                         type="image/webp">
@@ -341,15 +348,20 @@
                 <button class="btn true-mesh__btn">See how it works</button>
                 <picture>
                     <source srcset="./img/true-mesh/true-mesh-mobile@1x.webp 1x,
-                                    ./img/true-mesh/true-mesh-mobile@2x.webp 2x" media="(max-width: 959px)"
+                                    ./img/true-mesh/true-mesh-mobile@2x.webp 2x" media="(max-width: 767px)"
                         type="image/webp">
                     <source srcset="./img/true-mesh/true-mesh-mobile@1x.png 1x,
-                                    ./img/true-mesh/true-mesh-mobile@2x.png 2x" media="(max-width: 959px)">
+                                    ./img/true-mesh/true-mesh-mobile@2x.png 2x" media="(max-width: 767px)">
+                    <source srcset="./img/true-mesh/true-mesh-tablet-medium@1x.webp 1x,
+                                    ./img/true-mesh/true-mesh-tablet-medium@2x.webp 2x" media="(max-width: 1023px)"
+                        type="image/webp">
+                    <source srcset="./img/true-mesh/true-mesh-tablet-medium@1x.png 1x,
+                                    ./img/true-mesh/true-mesh-tablet-medium@2x.png 2x" media="(max-width: 1023px)">
                     <source srcset="./img/true-mesh/true-mesh-tablet@1x.webp 1x,
-                                    ./img/true-mesh/true-mesh-tablet@2x.webp 2x" media="(min-width: 960px)"
+                                    ./img/true-mesh/true-mesh-tablet@2x.webp 2x" media="(min-width: 1024px)"
                         type="image/webp">
                     <source srcset="./img/true-mesh/true-mesh-tablet@1x.png 1x,
-                                    ./img/true-mesh/true-mesh-tablet@2x.png 2x" media="(min-width: 960px)">
+                                    ./img/true-mesh/true-mesh-tablet@2x.png 2x" media="(min-width: 1024px)">
                     <img class="true-mesh__img" src="./img/true-mesh/true-mesh-mobile@1x.png"
                         alt="Drawn people at home">
                 </picture>
@@ -669,6 +681,12 @@
                 </ul>
             </div>
         </section>
+        <section class="stay-connected">
+            <div class="container">
+                <h2 class="stay-connected__title">Stay connected with fast, reliable, whole-home wifi.</h2>
+                <button class="btn stay-connected__btn" type="button">Goodbye dead spots</button>
+            </div>
+        </section>
         <footer class="footer">
             <div class="container footer__container">
                 <a class="logo footer__logo" href="./index.html">
@@ -748,7 +766,9 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="footer-copyright"> &copy;2021 EERO LLC, SAN FRANCISCO, CA</p>
+                    <p class="footer-copyright">
+                        &copy;2021 EERO LLC, SAN FRANCISCO, CA
+                    </p>
                 </div>
             </div>
         </footer>

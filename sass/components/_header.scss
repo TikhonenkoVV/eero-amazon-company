@@ -28,20 +28,26 @@
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 6px 0;
     text-align: center;
     color: $colorTextWhite;
     background-color: $colorBackgroundDark;
     z-index: 6;
-    @include for-size(tablet) {
-        padding: 5px 0;
-    }
 }
 
-.header__banner-text {
+.header__banner-btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: roboto, sans-serif;
     @include font(400, 12px, 1, '');
+    background: none;
+    border: none;
+    color: $colorTextWhite;
+    @include for-size(tablet-medium) {
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
     @include for-size(tablet) {
-        @include font(400, 14px, 1.643, '');
+        @include font(400, 14px, 1, '');
     }
 }
 
@@ -53,7 +59,7 @@
     z-index: 6;
     padding: 10px 0;
     @include for-size(tablet-medium) {
-        margin-right: 50px;
+        margin-right: 30px;
         padding: 10px 0;
     }
     @include for-size(tablet) {
@@ -122,6 +128,7 @@
 }
 
 .header__nav-link {
+    display: block;
     color: inherit;
     transition: color $baseTransition, background-color $baseTransition;
     &:hover,
@@ -129,18 +136,19 @@
         background-color: $colorBackgroundLightGray;
         color: $colorAccent;
     }
-    @include font(400, 36px, 1.2223, 0.11px);
+    @include font(400, 36px, calc(44 / 36), '');
     @include for-size(tablet-medium) {
         display: block;
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding-top: 17px;
+        padding-bottom: 17px;
         padding-left: 10px;
         padding-right: 10px;
-        @include font(400, 18px, 1.2223, 0.11px);
+        @include font(400, 14px, calc(16 / 14), 0.11px);
     }
     @include for-size(tablet) {
         padding-top: 29px;
         padding-bottom: 29px;
+        @include font(400, 18px, calc(22 / 18), 0.11px);
     }
     @include for-size(desktop) {
         padding-left: 20px;
@@ -174,7 +182,7 @@
     padding: 0;
     border: none;
     text-transform: uppercase;
-    @include font(400, 14px, 1, 0.11px);
+    @include font(400, 14px, 1, '');
     transition: background-color $baseTransition;
     @include for-size(mobile-only) {
     }

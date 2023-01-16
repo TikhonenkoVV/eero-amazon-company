@@ -1,6 +1,6 @@
 @mixin for-size($range) {
     $mobile: 414px;
-    $tablet-medium: 960px;
+    $tablet-medium: 768px;
     $tablet: 1024px;
     $desktop: 1440px;
 
@@ -10,6 +10,10 @@
         }
     } @else if $range == mobile {
         @media screen and (min-width: $mobile) {
+            @content;
+        }
+    } @else if $range == tablet-medium-only {
+        @media screen and (min-width: $tablet-medium) and (max-width: #{$tablet - 0.02}) {
             @content;
         }
     } @else if $range == tablet-medium {
@@ -77,31 +81,5 @@
     }
     @if $letter-spacing != '' {
         letter-spacing: $letter-spacing;
-    }
-}
-
-@mixin kf($name: '', $left: '', $top: '', $width: '', $height: '') {
-    @keyframes #{$name} {
-        0% {
-            opacity: 0;
-        }
-        10% {
-            opacity: 0;
-        }
-        20% {
-            opacity: 1;
-        }
-        80% {
-        }
-        90% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-            left: $left;
-            top: $top;
-            width: $width;
-            height: $height;
-        }
     }
 }

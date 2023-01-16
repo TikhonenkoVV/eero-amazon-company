@@ -1,33 +1,44 @@
 .promo {
-    padding: 40px 0 5px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     text-align: center;
     @include for-size(tablet-medium) {
-        padding: 80px 0 3px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     @include for-size(desktop) {
-        padding: 110px 0 91px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     background-color: $colorBackgroundPrimary;
 }
 
 .promo__subtitle {
     @include font('', 18px, calc(21 / 18), '');
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     color: $colorTextPrimary;
 }
 
 .promo__amazon-logo {
     display: block;
-    margin: 0 auto 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    @include for-size(tablet-medium) {
+        margin-bottom: 30px;
+    }
 }
 
 .promo__link {
     margin-bottom: 30px;
     @include for-size(tablet-medium) {
+        margin-bottom: 40px;
+    }
+    @include for-size(tablet) {
         margin-bottom: 60px;
     }
     @include for-size(desktop) {
-        margin-bottom: 116px;
+        margin-bottom: 110px;
     }
 }
 
@@ -53,14 +64,14 @@
     margin-bottom: 20px;
     max-width: 730px;
     text-align: center;
-    @include font('', 30px, calc(40 / 30), '');
+    @include font(400, 30px, 40px, '');
     color: $colorTextPrimary;
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         @include font('', 50px, calc(60 / 50), '');
-        margin-bottom: 28px;
+        margin-bottom: 30px;
     }
     @include for-size(desktop) {
-        margin-bottom: 44px;
+        margin-bottom: 50px;
     }
 }
 
@@ -74,21 +85,19 @@
     color: $colorTextPrimary;
     @include for-size(tablet-medium) {
         @include font('', 18px, calc(25 / 18), '');
-        margin-bottom: 28px;
+        margin-bottom: 30px;
     }
     @include for-size(desktop) {
-        margin-bottom: 78px;
+        margin-bottom: 80px;
     }
 }
 
 .promo__button {
-    width: 200px;
-    height: 50px;
     margin-bottom: 50px;
     background-color: $colorAccent;
     border: none;
     color: $colorTextWhite;
-    @include for-size(tablet) {
+    @include for-size(tablet-medium) {
         margin-bottom: 80px;
     }
     @include for-size(desktop) {
@@ -96,20 +105,14 @@
     }
 }
 
-.promo__wrapper {
-    position: relative;
-    max-width: 928px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    @include for-size(tablet-medium) {
-        margin-bottom: 36px;
-    }
-    @include for-size(desktop) {
-        margin-bottom: 124px;
-    }
-}
-
 .promo__img {
     width: 100%;
+    @include for-size(tablet) {
+        width: 708px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include for-size(desktop) {
+        width: 928px;
+    }
 }

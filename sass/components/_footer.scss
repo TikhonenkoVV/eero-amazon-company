@@ -7,10 +7,11 @@
     color: $colorTextWhite;
     @include for-size(tablet-medium) {
         padding-top: 80px;
+        padding-bottom: 80px;
     }
     @include for-size(desktop) {
-        padding-top: 90px;
-        padding-bottom: 100px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -41,13 +42,21 @@
 
 .footer__box-wrapper {
     @include for-size(tablet-medium) {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 50px;
-        column-gap: 40px;
+        display: grid;
+        grid-template-columns: 354px 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        // flex-wrap: wrap;
+        // row-gap: 50px;
+        // column-gap: 40px;
+    }
+    @include for-size(tablet) {
+        grid-template-columns: 410px 1fr;
+        grid-column-gap: 40px;
     }
     @include for-size(desktop) {
-        column-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 60px;
     }
 }
 
@@ -55,12 +64,6 @@
     display: flex;
     @include for-size(mobile-only) {
         margin-bottom: 30px;
-    }
-    @include for-size(tablet-medium) {
-        width: 410px;
-    }
-    @include for-size(desktop) {
-        width: 500px;
     }
 }
 
@@ -83,11 +86,11 @@
 
 .footer__form-box {
     @include for-size(mobile-only) {
-        text-align: center;
         margin-bottom: 50px;
+        text-align: center;
     }
     @include for-size(tablet) {
-        flex-grow: 1;
+        // flex-grow: 1;
     }
 }
 
@@ -97,7 +100,7 @@
 
 .footer__text {
     @include font('', 18px, calc(25 / 18), '');
-    margin-bottom: 71px;
+    margin-bottom: 74px;
 }
 
 .footer__form {
@@ -111,26 +114,27 @@
 .footer-form__field {
     display: block;
     flex-grow: 1;
+    margin-bottom: 22px;
+    @include for-size(tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-form__input {
-    padding-top: 22px;
-    padding-bottom: 14px;
-    margin-bottom: 22px;
+    padding: 17px 15px;
     width: 100%;
+    color: $colorTextWhite;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid $colorTextWhite;
     background-color: $colorBackgroundDark;
-    @include font('', 14px, calc(17 / 14), '');
+    @include font('', 14px, calc(16 / 14), '');
     text-transform: uppercase;
 }
 
 .footer-btn {
     background-color: $colorBackgroundDark;
-    height: 53px;
-    width: 191px;
     border: 1px solid $colorTextWhite;
     transition: background-color $baseTransition;
     &:hover,
@@ -154,11 +158,12 @@
 }
 
 .footer__socials {
-    justify-content: space-between;
+    justify-content: center;
     @include for-size(mobile-only) {
         margin-bottom: 30px;
     }
     @include for-size(tablet-medium) {
+        justify-content: flex-start;
         order: 2;
     }
 }

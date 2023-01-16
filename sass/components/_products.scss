@@ -7,9 +7,9 @@
         width: 414px;
     }
     @include for-size(tablet-medium) {
-        width: 960px;
-        padding-top: 400px;
-        padding-bottom: 28px;
+        width: 768px;
+        padding-top: 291px;
+        padding-bottom: 30px;
         background-image: url(../img/products/products-eero-tablet@1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -20,6 +20,8 @@
         }
     }
     @include for-size(tablet) {
+        padding-top: 400px;
+        padding-bottom: 25px;
         width: 1024px;
     }
     @include for-size(desktop) {
@@ -36,8 +38,7 @@
 .products__wrapper {
     @include for-size(tablet-medium) {
         display: flex;
-        gap: 34px;
-        margin-bottom: 20px;
+        gap: 28px;
     }
     @include for-size(tablet) {
         margin-bottom: 25px;
@@ -45,21 +46,27 @@
     @include for-size(desktop) {
         gap: 60px;
         margin-bottom: 90px;
-        padding: 0 106px;
+        justify-content: center;
     }
 }
 
 .products__element {
+    max-width: 550px;
     text-align: center;
     color: $colorTextWhite;
     @include for-size(mobile-only) {
         padding-top: 421px;
-        padding-bottom: 38px;
+        padding-bottom: 40px;
         padding-left: 30px;
         padding-right: 30px;
+        margin-left: -15px;
+        margin-right: -15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     @include for-size(tablet-medium) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 28px) / 2);
     }
     @include for-size(tablet) {
         flex-basis: calc((100% - 34px) / 2);
@@ -72,11 +79,6 @@
 
 .products__element-pro6 {
     @include for-size(mobile-only) {
-        margin-left: -15px;
-        margin-right: -15px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         background-image: url('../img/products/products-eero-pro6-mobile@1x.jpg');
         @include for-size(retina) {
             background-image: url('../img/products/products-eero-pro6-mobile@2x.jpg');
@@ -86,11 +88,6 @@
 
 .products__element6 {
     @include for-size(mobile-only) {
-        margin-left: -15px;
-        margin-right: -15px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         background-image: url('../img/products/products-eero6-mobile@1x.jpg');
         @include for-size(retina) {
             background-image: url('../img/products/products-eero6-mobile@2x.jpg');
@@ -111,6 +108,9 @@
     @include font(700, 16px, calc(20 / 16), '');
     border-radius: 10px;
     background-color: $colorBackgroundPrimary;
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 15px;
+    }
     @include for-size(desktop) {
         margin-left: 0;
         margin-right: 0;
@@ -120,12 +120,15 @@
 .products__caption {
     @include font(400, 22px, calc(26 / 22), '');
     margin-bottom: 16px;
+    @include for-size(tablet-medium) {
+        margin-bottom: 15px;
+    }
     @include for-size(tablet) {
         margin-bottom: 20px;
         @include font('', 28px, calc(30 / 28), '');
     }
-    @include for-size(tablet) {
-        margin-bottom: 16px;
+    @include for-size(desktop) {
+        margin-bottom: 12px;
         @include font('', 36px, calc(44 / 36), '');
     }
 }
@@ -133,14 +136,17 @@
 .products__title {
     @include font(400, 28px, calc(32 / 28), '');
     margin-bottom: 20px;
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 15px;
+    }
     @include for-size(tablet-medium) {
-        @include font(400, 32px, calc(40 / 32), '');
+        @include font('', 26px, calc(32 / 26), '');
     }
     @include for-size(tablet) {
-        @include font(400, 36px, calc(40 / 36), '');
+        @include font('', 36px, calc(40 / 36), '');
     }
     @include for-size(desktop) {
-        @include font(400, 42px, calc(48 / 42), '');
+        @include font('', 42px, calc(48 / 42), '');
     }
 }
 
@@ -160,21 +166,29 @@
 .products__description {
     @include font('', 16px, calc(22 / 16), '');
     margin-bottom: 23px;
+    @include for-size(tablet-medium) {
+        margin-bottom: 20px;
+    }
     @include for-size(tablet) {
         @include font('', 18px, calc(24 / 18), '');
         margin-bottom: 28px;
     }
+    @include for-size(desktop) {
+        margin-bottom: 38px;
+    }
 }
 
 .products__description-price {
-    @include font('', 18px, calc(22 / 18), '');
     margin-bottom: 16px;
-    @include for-size(tablet) {
-        @include font('', 18px, calc(24 / 18), '');
-        margin-bottom: 27px;
+    @include font('', 18px, calc(22 / 18), '');
+    @include for-size(tablet-medium) {
+        margin-bottom: 17px;
     }
     @include for-size(tablet) {
-        margin-bottom: 38px;
+        margin-bottom: 31px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 40px;
     }
 }
 
@@ -184,12 +198,14 @@
 
 .products__btn {
     background-color: $colorAccent;
-    width: 220px;
-    height: 52px;
     border: none;
 }
 
 .products__link {
+    display: none;
+    @include for-size(tablet) {
+        display: inline-block;
+    }
     color: $colorTextWhite;
     transition: color $baseTransition;
     &::after {
@@ -202,8 +218,5 @@
         &::after {
             background-color: $colorAccent;
         }
-    }
-    @include for-size(mobile-only) {
-        display: none;
     }
 }

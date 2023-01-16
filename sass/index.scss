@@ -11,6 +11,7 @@
 @import './components/hero';
 @import './components/promo';
 @import './components/products';
+@import './components/article';
 @import './components/smart-home';
 @import './components/adventages';
 @import './components/true-mesh';
@@ -19,5 +20,19 @@
 @import './components/configurator';
 @import './components/offer';
 @import './components/help-center';
+@import './components/stay-connected';
 @import './components/footer';
 @import './utils/vh';
+
+// .promo,
+// .products,
+// .smart,
+// .advantages,
+// .true-mesh,
+// .about,
+// .selection,
+// .offer,
+// .help-center,
+// .footer {
+//     display: none;
+// }

@@ -7,6 +7,9 @@
     justify-content: center;
     gap: 46px;
     margin-bottom: 30px;
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 10px;
+    }
     @include for-size(desktop) {
         margin-bottom: 36px;
     }
@@ -60,6 +63,9 @@
     align-items: center;
     margin-bottom: 20px;
     gap: 10px;
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 10px;
+    }
 }
 
 .configurator__caption {
@@ -80,12 +86,14 @@
 .configurator__img {
     height: auto;
     width: 100%;
-    margin: 0 auto 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 10px;
+    }
     @include for-size(tablet-medium) {
         max-width: 384px;
-    }
-    @include for-size(desktop) {
-        margin-bottom: 60px;
     }
 }
 
@@ -123,7 +131,6 @@
     flex-basis: calc((100% - 14px) / 2);
     flex-grow: 1;
     max-width: 220px;
-    height: 52px;
     border: none;
     background-color: $colorAccent;
 }

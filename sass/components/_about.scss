@@ -3,10 +3,10 @@
     padding-bottom: 40px;
     @include for-size(tablet-medium) {
         padding-top: 80px;
-        padding-bottom: 51px;
+        padding-bottom: 80px;
     }
     @include for-size(desktop) {
-        padding-top: 116px;
+        padding-top: 120px;
         padding-bottom: 120px;
     }
 }
@@ -15,10 +15,12 @@
     color: $colorTextPrimary;
     text-align: center;
     margin-bottom: 40px;
-    @include font(400, 28px, calc(30 / 28), '');
+    @include font(400, 28px, calc(40 / 28), '');
     @include for-size(tablet-medium) {
-        margin-bottom: 83px;
         @include font(400, 50px, calc(60 / 50), '');
+    }
+    @include for-size(tablet) {
+        margin-bottom: 83px;
     }
 }
 
@@ -26,17 +28,19 @@
     text-align: center;
     @include for-size(tablet-medium) {
         display: flex;
-        gap: 80px;
-        width: 798px;
-        height: 427px;
+        gap: 45px;
+        height: 380px;
         margin: 0 auto;
     }
     @include for-size(tablet) {
         gap: 90px;
+        width: 798px;
+        height: 427px;
     }
     @include for-size(desktop) {
         gap: 164px;
         width: 946px;
+        justify-content: center;
         text-align: left;
     }
 }
@@ -51,36 +55,49 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-basis: calc((100% - 160px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
     }
     @include for-size(tablet) {
         flex-basis: calc((100% - 180px) / 3);
     }
     @include for-size(desktop) {
         align-items: flex-start;
-        flex-basis: calc((100% - 330px) / 3);
+        flex-basis: calc((100% - 328px) / 3);
     }
 }
 
 .about__icon {
     fill: $colorAccent;
     margin-bottom: 32px;
+    @include for-size(tablet-medium-only) {
+        margin-bottom: 20px;
+    }
 }
 
 .about__subtitle {
     @include font(400, 21px, calc(24 / 21), '');
     color: $colorTextPrimary;
-    max-width: 182px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 18px;
+    @include for-size(tablet-medium-only) {
+        max-width: 182px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    @include for-size(desktop) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .about__text {
-    flex: 1 0 0;
     @include font(400, 18px, calc(24 / 18), '');
     color: $colorTextPrimary;
     margin-bottom: 30px;
+    @include for-size(tablet-medium) {
+        flex: 1 0 0;
+        margin-bottom: 0;
+    }
 }
 
 .about__link.link {
