@@ -1,0 +1,226 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 750px;
+    height: 100%;
+    padding-top: 54px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    background-color: $colorBackgroundPrimary;
+    transform: translate(-50%, -50%);
+    @include for-size(mobile) {
+        width: 384px;
+    }
+    @include for-size(tablet-medium) {
+        width: 720px;
+        max-height: 540px;
+        padding-top: 90px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    @include for-size(tablet) {
+        width: 800px;
+        max-height: 600px;
+    }
+    &--eero6 {
+    }
+    &--eero-pro6 {
+    }
+}
+
+.modal__btn-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: $colorBackgroundPrimary;
+    @include for-size(tablet-medium) {
+        top: 30px;
+        right: 30px;
+    }
+}
+
+.modal__form {
+    height: 100%;
+}
+
+.modal__box-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include for-size(tablet-medium) {
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+}
+
+.modal__caption {
+    margin-bottom: 12px;
+    color: $colorTextPrimary;
+    @include font('', 24px, calc(36 / 24), '');
+    @include for-size(tablet-medium) {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+        order: 1;
+    }
+}
+
+.modal__box-chckbox {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    @include for-size(tablet-medium) {
+        flex-direction: column;
+        gap: 20px;
+        width: calc(50% - 15px);
+        margin-bottom: auto;
+        order: 2;
+    }
+}
+
+.modal__field {
+    cursor: pointer;
+    flex-basis: calc((100% - 24px) / 3);
+    @include for-size(tablet-medium) {
+        display: flex;
+    }
+    &.current .modal__element--a,
+    &:hover .modal__element--a,
+    &:focus .modal__element--a {
+        background-color: $colorBackgroundPromoArticle;
+    }
+    &.current .modal__element--b,
+    &:hover .modal__element--b,
+    &:focus .modal__element--b {
+        border-color: $colorBackgroundPromoArticle;
+        color: $colorTextPrimary;
+    }
+}
+
+.modal__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include font('', 16px, calc(20 / 16), '');
+    @include for-size(tablet-medium) {
+        @include font('', 20px, 1, '');
+    }
+    @include for-size(tablet) {
+        @include font('', 24px, 1, '');
+    }
+    &--a {
+        color: $colorTextWhite;
+        background-color: $colorModal;
+        height: 40px;
+        transition: background-color $baseTransition;
+        @include for-size(tablet-medium) {
+            width: 96px;
+            height: 65px;
+        }
+        @include for-size(tablet) {
+            height: 72px;
+        }
+    }
+    &--b {
+        height: 43px;
+        color: $colorModal;
+        border-left: 3px solid $colorModal;
+        border-right: 3px solid $colorModal;
+        border-bottom: 3px solid $colorModal;
+        transition: border-color $baseTransition;
+        @include for-size(tablet-medium) {
+            flex-grow: 1;
+            height: 65px;
+            border-top: 3px solid $colorModal;
+            border-left: none;
+        }
+        @include for-size(tablet) {
+            height: 72px;
+        }
+    }
+}
+
+.modal__box-text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px;
+    margin-bottom: 12px;
+    background-image: url('../../img/modal/router_6_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include for-size(tablet-medium-only) {
+        padding: 25px;
+    }
+    @include for-size(tablet-medium) {
+        width: calc(50% - 15px);
+        margin-bottom: 0;
+        order: 4;
+    }
+}
+
+.modal__logo-icon {
+    fill: #000000;
+    margin-bottom: 20px;
+}
+
+.modal__text-wrapper {
+    flex: 1 1 auto;
+}
+
+.modal__text-element {
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+.modal__text {
+    @include font('', 18px, calc(22 / 18), '');
+    &--dot {
+        flex-shrink: 0;
+        width: 27px;
+        text-align: center;
+    }
+    @include for-size(tablet) {
+        @include font('', 20px, calc(22 / 20), '');
+    }
+}
+
+.modal__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    @include for-size(tablet-medium) {
+        flex-direction: column;
+        gap: 15px;
+        width: calc(50% - 15px);
+        order: 3;
+    }
+    @include for-size(tablet) {
+        gap: 35px;
+    }
+}
+
+.modal__price {
+    flex-shrink: 0;
+    @include font(700, 50px, 1, '');
+}
+
+.modal__btn {
+    border: none;
+    background-color: $colorAccent;
+    max-width: 100%;
+}

@@ -53,11 +53,13 @@
 
 .header__container {
     display: flex;
+    border-bottom: 1px solid $colorLinkUnderline;
 }
 
 .header__logo {
     z-index: 6;
     padding: 10px 0;
+    fill: #000000;
     @include for-size(tablet-medium) {
         margin-right: 30px;
         padding: 10px 0;
@@ -216,7 +218,7 @@
     }
 }
 
-.header__mobile-menu-open {
+.header__mobile-menu {
     position: relative;
     display: none;
     @include for-size(mobile-only) {
@@ -225,29 +227,50 @@
         width: 30px;
         height: 30px;
     }
+    &.is-open span {
+        width: 30px;
+        height: 100%;
+        border-width: 2px;
+        border-radius: 30%;
+    }
 }
 
-.header__mobile-menu-open::before,
-.header__mobile-menu-open::after {
+.header__mobile-menu::before,
+.header__mobile-menu::after {
     content: '';
     position: absolute;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: $colorBlack;
+    transition: transform $baseTransition, top $baseTransition, bottom $baseTransition;
 }
 
-.header__mobile-menu-open::before {
+.header__mobile-menu::before {
     top: 4px;
 }
+.header__mobile-menu.is-open::before {
+    transform: rotate(45deg);
+    top: 14px;
+    left: 3px;
+    width: 80%;
+}
 
-.header__mobile-menu-open::after {
+.header__mobile-menu::after {
     bottom: 4px;
+}
+.header__mobile-menu.is-open::after {
+    transform: rotate(-45deg);
+    left: 3px;
+    bottom: 14px;
+    width: 80%;
 }
 
 .header__btn-decor {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: $colorBlack;
+    border: 1px solid $colorBlack;
+    // background-color: $colorBlack;
+    transition: height $baseTransition;
 }

@@ -1,0 +1,11 @@
+.eero-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+    color: $colorBlack;
+    @include font(700, 16px, calc(20 / 16), '');
+    border-radius: 10px;
+    background-color: $colorBackgroundPrimary;
+}

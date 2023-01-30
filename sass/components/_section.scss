@@ -1,0 +1,25 @@
+.section {
+    padding: 50px 0;
+    @include for-size(tablet-medium) {
+        padding: 80px 0;
+    }
+    @include for-size(desktop) {
+        padding: 120px 0;
+    }
+}
+
+.section__title {
+    @include font(400, 28px, calc(40 / 28), '');
+    @include for-size(tablet-medium) {
+        @include font('', 50px, calc(60 / 50), '');
+    }
+}
+
+.section__description {
+    @include font('', 18px, calc(24 / 18), '');
+    @include for-size(tablet-medium) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 82px;
+    }
+}

@@ -1,61 +1,6 @@
 .promo {
-    padding-top: 40px;
-    padding-bottom: 20px;
     text-align: center;
-    @include for-size(tablet-medium) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-    @include for-size(desktop) {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
     background-color: $colorBackgroundPrimary;
-}
-
-.promo__subtitle {
-    @include font('', 18px, calc(21 / 18), '');
-    margin-bottom: 20px;
-    color: $colorTextPrimary;
-}
-
-.promo__amazon-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    @include for-size(tablet-medium) {
-        margin-bottom: 30px;
-    }
-}
-
-.promo__link {
-    margin-bottom: 30px;
-    @include for-size(tablet-medium) {
-        margin-bottom: 40px;
-    }
-    @include for-size(tablet) {
-        margin-bottom: 60px;
-    }
-    @include for-size(desktop) {
-        margin-bottom: 110px;
-    }
-}
-
-.promo__link.link {
-    color: $colorTextPrimary;
-    transition: color $baseTransition;
-    &::after {
-        background-color: $colorTextPrimary;
-        transition: background-color $baseTransition;
-    }
-    &:hover,
-    &:focus {
-        color: $colorAccent;
-        &::after {
-            background-color: $colorAccent;
-        }
-    }
 }
 
 .promo__title {

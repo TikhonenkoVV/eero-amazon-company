@@ -1,0 +1,35 @@
+.amazon-shop {
+    text-align: center;
+}
+
+.amazon-shop__caption {
+    @include font('', 18px, calc(21 / 18), '');
+    margin-bottom: 20px;
+    color: $colorTextPrimary;
+}
+
+.amazon-shop__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    @include for-size(tablet-medium) {
+        margin-bottom: 30px;
+    }
+}
+
+.amazon-shop__link.link {
+    color: $colorTextPrimary;
+    transition: color $baseTransition;
+    &::after {
+        background-color: $colorTextPrimary;
+        transition: background-color $baseTransition;
+    }
+    &:hover,
+    &:focus {
+        color: $colorAccent;
+        &::after {
+            background-color: $colorAccent;
+        }
+    }
+}

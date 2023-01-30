@@ -1,0 +1,5 @@
+.main {
+    @include for-size(mobile-only) {
+        margin-top: 74px;
+    }
+}

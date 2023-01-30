@@ -8,8 +8,12 @@
 @import './components/header';
 @import './components/socials';
 @import './components/logo';
-@import './components/hero';
-@import './components/promo';
+@import './components/eero-icon';
+@import './components/main.scss';
+@import './components/section.scss';
+@import './layouts/hero';
+@import './layouts/amazon-shop';
+@import './layouts/promo';
 @import './components/products';
 @import './components/article';
 @import './components/smart-home';
@@ -22,6 +26,8 @@
 @import './components/help-center';
 @import './components/stay-connected';
 @import './components/footer';
+@import './components/backdrop';
+@import './components/modal';
 @import './utils/vh';
 
 // .promo,

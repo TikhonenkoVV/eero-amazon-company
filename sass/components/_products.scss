@@ -95,19 +95,10 @@
     }
 }
 
-.products__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 20px;
+.products__eero-icon {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 17px;
-    color: $colorBlack;
-    @include font(700, 16px, calc(20 / 16), '');
-    border-radius: 10px;
-    background-color: $colorBackgroundPrimary;
     @include for-size(tablet-medium-only) {
         margin-bottom: 15px;
     }

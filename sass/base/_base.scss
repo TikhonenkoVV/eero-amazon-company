@@ -1,9 +1,12 @@
 body {
-    background-color: $colorBackgroundPrimary;
-    color: $colorTextPrimary;
-
+    max-width: 100%;
     font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
     letter-spacing: 0.11px;
+    color: $colorTextPrimary;
+    background-color: $colorBackgroundPrimary;
 }
 
 h1,
@@ -24,10 +27,6 @@ ol {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
 button {
     cursor: pointer;
 }
@@ -36,4 +35,9 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Eero Amazon Company</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__banner">
+            <button class="header__banner-btn" type="button">Free shipping & 30% off Echo Dot when buying a
+                set</button>
+        </div>
+        <div class="container header__container">
+            <a class="logo header__logo" href="./index.html">
+                <svg class="header__logo-icon">
+                    <use href="./img/icons.svg#icon-mainlogo"></use>
+                </svg>
+            </a>
+            <div class="header__navigation-wrapper">
+                <div class="header__navigation-container">
+                    <nav class="header__navigation">
+                        <ul class="header__nav" id="nav">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./products.html">Products</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./technology.html">How it
+                                    works</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./eero-Secure.html">Secure</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./configurator.html">Find your
+                                    system</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="https://support.eero.com/hc/en-us" target="_blank"
+                                    rel="noopener noreferrer">Support</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link"
+                                    href="https://www.amazon.com/stores/page/FC890135-A1A9-499D-91A1-860E8614C254?channel=eero_homepage"
+                                    target="_blank" rel="noopener noreferrer">Shop on Amazon</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__socials">
+                        <ul class="socials">
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-pinterest"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__btn-wrapper">
+                <button class="header__btn-cart"><span class="header__btn-cart-content">Cart</span>
+                    <svg class="header__btn-cart-icon" width="30" height="30">
+                        <use href="./img/icons.svg#icon-cart"></use>
+                    </svg>
+                </button>
+                <div class="header__mobile-menu" aria-expanded="false">
+                    <span class="header__btn-decor"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="selection">
+            <div class="container">
+                <h2 class="selection__title">Find your eero system</h2>
+                <div class="configurator">
+                    <ul class="configurator__counter">
+                        <li class="configurator__item configurator__item--current configurator__item--clickabled">
+                            <span class="configurator__dots configurator__dots--used">1</span>
+                        </li>
+                        <li class="configurator__item">
+                            <span class="configurator__dots">2</span>
+                        </li>
+                        <li class="configurator__item">
+                            <span class="configurator__dots">3</span>
+                        </li>
+                        <li class="configurator__item">
+                            <span class="configurator__dots">4</span>
+                        </li>
+                    </ul>
+                    <div class="configurator__box">
+                        <form action="#">
+                            <div class="configurator__page configurator__home" aria-expanded="false">
+                                <img class="configurator__img" src="./img/selection/home.svg" width="387" height="192"
+                                    alt="home">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">I have a</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="home-s" for="size-s" class="configurator__label">smaller
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="size-s">
+                                        <label id="home-m" for="size-m" class="configurator__label">medium
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="size-m">
+                                        <label id="home-l" for="size-l" class="configurator__label">larger
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="size-l">
+                                    </div>
+                                    <span class="configurator__caption">home</span>
+                                </div>
+                            </div>
+                            <div class="configurator__page configurator__gadjets visually-hidden" aria-expanded="false">
+                                <img class="configurator__img" src="./img/selection/gadjets.svg" width="185"
+                                    height="192" alt="gadjets">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">My home has</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="gadjets-s" for="count-s" class="configurator__label">less than 10
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="count" id="count-s">
+                                        <label id="gadjets-m" for="count-m" class="configurator__label">10 to 30
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="count" id="count-m">
+                                        <label id="gadjets-l" for="count-l" class="configurator__label">more than 30
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="count" id="count-l">
+                                    </div>
+                                    <span class="configurator__caption">connected devices</span>
+                                </div>
+                            </div>
+                            <div class="configurator__page configurator__speed visually-hidden" aria-expanded="false">
+                                <img class="configurator__img" src="./img/selection/speed.svg" width="192" height="192"
+                                    alt="speed">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">I need support for</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="speed-basic" for="speed-s" class="configurator__label">basic
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="speed" id="speed-s">
+                                        <label id="speed-fast" for="speed-m" class="configurator__label">fast
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="speed" id="speed-m">
+                                        <label id="speed-gigabit" for="speed-l" class="configurator__label">gigabit
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="speed" id="speed-l">
+                                    </div>
+                                    <span class="configurator__caption">speeds</span>
+                                </div>
+                            </div>
+                            <div class="configurator__page configurator__multiple visually-hidden"
+                                aria-expanded="false">
+                                <img class="configurator__img" src="./img/selection/multiple.svg" width="208"
+                                    height="192" alt="multiple">
+                                </img>
+                                <div class="configurator__controls">
+                                    <span class="configurator__caption">I</span>
+                                    <div class="configurator__group" role="group">
+                                        <label id="multiple-yes" for="multiple-y" class="configurator__label">have
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="multiple-y">
+                                        <label id="multiple-no" for="multiple-n" class="configurator__label">don`t
+                                            have
+                                        </label>
+                                        <input class="visually-hidden" type="radio" name="size" id="multiple-n">
+                                    </div>
+                                    <span class="configurator__caption">an ethernet connection in multiple
+                                        rooms</span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="configurator__btn-wrapper">
+                            <button class="btn configurator__btn configurator__btn--preview visually-hidden"
+                                type="button">Preview</button>
+                            <button class="btn configurator__btn configurator__btn--next disabled"
+                                type="button">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="logo footer__logo" href="./index.html">
+                <svg class="footer__logo-icon" width="86" height="39">
+                    <use href="./img/icons.svg#icon-mainlogo"></use>
+                </svg>
+            </a>
+            <div class="footer__box-wrapper">
+                <div class="footer__nav-box">
+                    <ul class="footer__nav">
+                        <li class="footer__items">
+                            <a class="footer__nav-link" href="./products.html">Products</a>
+                        </li>
+                        <li class="footer__items">
+                            <a class="footer__nav-link" href="./technology.html">How it works</a>
+                        </li>
+                        <li class="footer__items"><a class="footer__nav-link" href="./eero-Secure.html">Secure</a>
+                        </li>
+                        <li class="footer__items"><a class="footer__nav-link" href="./configurator.html">Find Your
+                                System</a>
+                        </li>
+                        <li class="footer__items">
+                            <a class="footer__nav-link" href="https://support.eero.com/hc/en-us" target="_blank"
+                                rel="noopener noreferrer">Support</a>
+                        </li>
+                        <li class="footer__items"><a class="footer__nav-link"
+                                href="https://www.amazon.com/stores/page/FC890135-A1A9-499D-91A1-860E8614C254?channel=eero_homepage"
+                                target="_blank" rel="noopener noreferrer">Shop on Amazon</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Cookie preferences</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Careers</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Blog</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Media room</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Legal</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">For Business</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">For Pro installers</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">For Service Providers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__form-box">
+                    <p class="footer__caption">Connect with us</p>
+                    <p class="footer__text">For the latest eero news and promotions.</p>
+                    <form class="footer__form">
+                        <label class="footer-form__field">
+                            <input class="footer-form__input" type="text" name="email" id="email"
+                                placeholder="E-mail" />
+                        </label>
+                        <button type="submit" class="btn footer-btn">
+                            submit
+                        </button>
+                    </form>
+                </div>
+                <ul class="socials footer__socials">
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-pinterest"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer-copyright">
+                    &copy;2021 EERO LLC, SAN FRANCISCO, CA
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script defer src="./js/scroll.js" type="module"></script>
+    <script defer src="./js/mobile-menu.js" type="module"></script>
+    <script defer src="./js/configurator.js" type="module"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/modal.js" type="module"></script>
+</body>

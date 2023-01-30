@@ -7,15 +7,44 @@
     background-color: $colorBackgroundPrimary;
     color: $colorTextWhite;
     overflow: hidden;
-    @include for-size(mobile-only) {
-        padding-top: 74px;
-    }
     @include for-size(tablet-medium-only) {
         padding-bottom: 80px;
     }
     @include for-size(desktop) {
         padding-bottom: 98px;
     }
+    &--secure {
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 180px;
+        background-color: $colorBackgroundDark;
+        @include for-size(mobile) {
+            padding-bottom: 250px;
+        }
+        @media screen and (min-width: 576px) {
+            padding-bottom: 300px;
+        }
+        @include for-size(tablet-medium) {
+            padding-top: 80px;
+            padding-bottom: 350px;
+        }
+        @media screen and (min-width: 960px) {
+            padding-bottom: 400px;
+        }
+        @include for-size(tablet) {
+            padding-bottom: 450px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-bottom: 500px;
+        }
+    }
+}
+
+.hero__img {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
 }
 
 .hero__anim-wrapper {

@@ -1,29 +1,14 @@
 .help-center {
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
     background-color: $colorBackgroundLightGray;
-    @include for-size(tablet-medium) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-    @include for-size(desktop) {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
 }
 
 .help-center__title {
     margin-bottom: 35px;
-    @include font(400, 30px, calc(40 / 30), '');
-    @include for-size(tablet-medium) {
-        @include font('', 50px, calc(60 / 50), '');
-    }
 }
 
-.help-center__caption {
-    margin-bottom: 45px;
-    @include font('', 18px, calc(25 / 18), '');
+.help-center__description {
+    margin-bottom: 46px;
     @include for-size(mobile-only) {
         width: 300px;
         margin-left: auto;

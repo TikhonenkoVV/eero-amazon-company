@@ -6,95 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Eero Amazon Company</title>
 </head>
 
 <body>
-    <main class="main">
-        <header class="header">
-            <div class="header__banner">
-                <button class="header__banner-btn" type="button">Free shipping & 30% off Echo Dot when buying a
-                    set</button>
+    <header class="header">
+        <div class="header__banner">
+            <button class="header__banner-btn" type="button">Free shipping & 30% off Echo Dot when buying a
+                set</button>
+        </div>
+        <div class="container header__container">
+            <a class="logo header__logo" href="./index.html">
+                <svg class="header__logo-icon">
+                    <use href="./img/icons.svg#icon-mainlogo"></use>
+                </svg>
+            </a>
+            <div class="header__navigation-wrapper">
+                <div class="header__navigation-container">
+                    <nav class="header__navigation">
+                        <ul class="header__nav" id="nav">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./products.html">Products</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./technology.html">How it
+                                    works</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./eero-Secure.html">Secure</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./configurator.html">Find your
+                                    system</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="https://support.eero.com/hc/en-us" target="_blank"
+                                    rel="noopener noreferrer">Support</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link"
+                                    href="https://www.amazon.com/stores/page/FC890135-A1A9-499D-91A1-860E8614C254?channel=eero_homepage"
+                                    target="_blank" rel="noopener noreferrer">Shop on Amazon</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__socials">
+                        <ul class="socials">
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-pinterest"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link">
+                                    <svg class="social-media__icon" width="30" height="30">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="container header__container">
-                <a class="logo header__logo" href="./index.html">
-                    <svg class="header__logo-icon">
-                        <use href="./img/icons.svg#icon-mainlogo"></use>
+            <div class="header__btn-wrapper">
+                <button class="header__btn-cart"><span class="header__btn-cart-content">Cart</span>
+                    <svg class="header__btn-cart-icon" width="30" height="30">
+                        <use href="./img/icons.svg#icon-cart"></use>
                     </svg>
-                </a>
-                <div class="header__navigation-wrapper">
-                    <div class="header__navigation-container">
-                        <nav class="header__navigation">
-                            <ul class="header__nav">
-                                <li class="header__nav-item"><a class="header__nav-link" href="">Products</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link" href="">How it works</a>
-                                </li>
-                                <li class="header__nav-item"><a class="header__nav-link" href="">Technology</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link" href="">eero Secure</a>
-                                </li>
-                                <li class="header__nav-item"><a class="header__nav-link" href="">Support</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link" href="">Find your
-                                        system</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header__socials">
-                            <ul class="socials">
-                                <li>
-                                    <a href="" class="social-link">
-                                        <svg class="social-media__icon" width="30" height="30">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="social-link">
-                                        <svg class="social-media__icon" width="30" height="30">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="social-link">
-                                        <svg class="social-media__icon" width="30" height="30">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="social-link">
-                                        <svg class="social-media__icon" width="30" height="30">
-                                            <use href="./img/icons.svg#icon-pinterest"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="social-link">
-                                        <svg class="social-media__icon" width="30" height="30">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__btn-wrapper">
-                    <button class="header__btn-cart"><span class="header__btn-cart-content">Cart</span>
-                        <svg class="header__btn-cart-icon" width="30" height="30">
-                            <use href="./img/icons.svg#icon-cart"></use>
-                        </svg>
-                    </button>
-                    <div class="header__mobile-menu-open" aria-expanded="false">
-                        <span class="header__btn-decor"></span>
-                    </div>
+                </button>
+                <div class="header__mobile-menu" aria-expanded="false">
+                    <span class="header__btn-decor"></span>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+    <main class="main">
         <section class="hero">
             <div class="hero__anim-wrapper">
                 <picture class="slide-a">
@@ -128,39 +141,67 @@
                 <div class="container hero__container">
                     <h1 class="hero__title">Wi-Fi 6 is here.</h1>
                     <p class="hero__caption">The future of home wifi is fast.</p>
-                    <button class="btn hero__btn" type="buttun">Shop wifi solutions</button>
+                    <a class="btn hero__btn" href="./products.html">Shop wifi solutions</a>
                 </div>
             </div>
         </section>
-        <section class="promo">
+        <section class="section amazon-shop">
+            <p class="amazon-shop__caption">Explore eero systems on</p>
+            <svg class="amazon-shop__logo" width="108" height="33">
+                <use href="./img/icons.svg#amazon"></use>
+            </svg>
+            <a class="amazon-shop__link link"
+                href="https://www.amazon.com/stores/page/FC890135-A1A9-499D-91A1-860E8614C254?channel=eero_homepage"
+                target="_blank" rel="noopener noreferrer">
+                Shop now
+            </a>
+        </section>
+        <section class="article">
             <div class="container">
-                <p class="promo__subtitle">Explore eero systems on</p>
-                <svg class="promo__amazon-logo" width="108" height="33">
-                    <use href="./img/icons.svg#amazon"></use>
-                </svg>
-                <a class="promo__link link"
-                    href="https://www.amazon.com/stores/page/FC890135-A1A9-499D-91A1-860E8614C254?channel=eero_homepage"
-                    target="_blank" rel="noopener noreferrer">
-                    Shop now
-                </a>
-                <h2 class="promo__title">
-                    More wifi for the devices in your connected home.
-                </h2>
-                <p class="promo__text">
-                    eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds,
-                    increase your internet’s efficiency, and reduce network congestion. Say
-                    goodbye to dead spots and buffering with a connection that doesn’t slow
-                    you down, even as you add more devices.
+                <p class="article__caption">“eero combats frustrating Wi-Fi dead zones with an armada of little wireless
+                    routers.”
                 </p>
-                <button type="button" class="btn promo__button">Find your eero system</button>
-                <img class="promo__img" src="./img/promo/devices.svg" alt="Drawn people at home">
+                <img class="article__img" src="./img/wsj.svg" width="350" height="30" alt="The wall street journal">
+            </div>
+        </section>
+        <section class="section advantages">
+            <div class="container">
+                <h2 class="section__title advantages__title">
+                    Give your home the connectivity it deserves.
+                </h2>
+                <p class="section__description advantages__description">
+                    Say goodbye to dead spots, drop-offs, and buffering—even when the whole family is online. With eero,
+                    a simple and
+                    reliable connection is a given. Get a consistently strong signal for streaming, gaming, and working
+                    from every part of
+                    your home.
+                </p>
+                <picture>
+                    <source srcset="./img/adventages/adventages-mobile@1x.webp 1x,
+                                            ./img/adventages/adventages-mobile@2x.webp 2x" media="(max-width: 767px)"
+                        type="image/webp">
+                    <source srcset="./img/adventages/adventages-mobile@1x.jpg 1x,
+                                            ./img/adventages/adventages-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./img/adventages/adventages-tablet@1x.webp 1x,
+                                            ./img/adventages/adventages-tablet@2x.webp 2x" media="(max-width: 1439px)"
+                        type="image/webp">
+                    <source srcset="./img/adventages/adventages-tablet@1x.jpg 1x,
+                                            ./img/adventages/adventages-tablet@2x.jpg 2x" media="(max-width: 1439px)">
+                    <source srcset="./img/adventages/adventages-desktop@1x.webp 1x,
+                                            ./img/adventages/adventages-desktop@2x.webp 2x" media="(min-width: 1440px)"
+                        type="image/webp">
+                    <source srcset="./img/adventages/adventages-desktop@1x.jpg 1x,
+                                            ./img/adventages/adventages-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                    <img class="advantages__img" src="./img/adventages/adventages-mobile@1x.jpg"
+                        alt="Drawn people at home">
+                </picture>
             </div>
         </section>
         <section class="products">
             <div class="container">
                 <div class="products__wrapper">
                     <div class="products__element products__element-pro6">
-                        <p class="products__icon">Wi-Fi 6</p>
+                        <p class="eero-icon products__eero-icon">Wi-Fi 6</p>
                         <p class="products__caption">eero Pro 6</p>
                         <h2 class="products__title products__title--short">The fastest eero yet.</h2>
                         <p class="products__description">
@@ -173,7 +214,7 @@
                         <button class="btn products__btn" type="button">Shop now</button>
                     </div>
                     <div class="products__element products__element6">
-                        <p class="products__icon">Wi-Fi 6</p>
+                        <p class="eero-icon products__eero-icon">Wi-Fi 6</p>
                         <p class="products__caption">eero 6</p>
                         <h2 class="products__title">
                             Experience Wi-Fi 6-the new standard for home wifi.
@@ -191,12 +232,134 @@
                 <a class="products__link link" href="#">Compare All Models</a>
             </div>
         </section>
-        <section class="article">
-            <div class="container">
-                <p class="article__caption">“eero combats frustrating Wi-Fi dead zones with an armada of little wireless
-                    routers.”
-                </p>
-                <img class="article__img" src="./img/wsj.svg" width="350" height="30" alt="The wall street journal">
+        <section class="offer">
+            <div class="container offer__container">
+                <h1 class="offer__title">Turns out, people love great wifi.</h1>
+                <div class="offer__swiper-container">
+                    <div class="offer__swiper-pagination">
+                        <p class="offer__link offer__link--current link">Setup</p>
+                        <p class="offer__link link">Coverage</p>
+                        <p class="offer__link link">Reliability</p>
+                        <p class="offer__link link">Security</p>
+                        </li>
+                    </div>
+                    <div class="swiper-wrapper offer__swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="offer__swiper-slide">
+                                <picture class="offer__img-wrapper offer__swiper-slide-item">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-1-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-1-mobile@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-1-mobile@1x.webp 1x,
+                                                        ./img/offer/offer-1-mobile@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-1-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-1-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-1-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-1-tablet@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-1-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-1-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-1-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-1-tablet@2x.webp 2x" type="image/webp">
+                                    <img class="offer__img" srcset="./img/offer/offer-1-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-1-mobile@2x.jpg 2x"
+                                        src="./img/offer/offer-1-mobile@1x.jpg" alt="двомісний номер">
+                                </picture>
+                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
+                                    <p class="swiper-slide-caption">"Setting up our eeros was a breeze thanks to the
+                                        plug
+                                        and play installation. The whole experience was life changing compared to other
+                                        routers we’ve used."</p>
+                                    <div class="offer__rankings">
+                                        <p class="offer__rankings-item">The Rankings</p>
+                                        <p class="offer__rankings-item">Seattle, WA | 4Bedroom house</p>
+                                        <p class="offer__rankings-item">3,300 sq. ft.</p>
+                                        <p class="offer__rankings-item">Use eero 3-pack</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="offer__swiper-slide">
+                                <picture class="offer__img-wrapper offer__swiper-slide-item">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-2-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-2-mobile@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-2-mobile@1x.webp 1x,
+                                                        ./img/offer/offer-2-mobile@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-2-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-2-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-2-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-2-tablet@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-2-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-2-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-2-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-2-tablet@2x.webp 2x" type="image/webp">
+                                    <img class="offer__img" srcset="./img/offer/offer-2-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-2-mobile@2x.jpg 2x"
+                                        src="./img/offer/offer-2-mobile@1x.jpg" alt="двомісний номер">
+                                </picture>
+                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
+                                    <p class="swiper-slide-caption">
+                                        "Eero’s mesh technology uses multiple wifi devices to
+                                        blanket your whole home in coverage. With the right system for your home, you
+                                        can work, stream, game, and chat—without missing a beat."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="offer__swiper-slide">
+                                <picture class="offer__img-wrapper offer__swiper-slide-item">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-3-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-3-mobile@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-3-mobile@1x.webp 1x,
+                                                        ./img/offer/offer-3-mobile@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-3-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-3-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-3-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-3-tablet@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-3-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-3-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-3-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-3-tablet@2x.webp 2x" type="image/webp">
+                                    <img class="offer__img" srcset="./img/offer/offer-3-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-3-mobile@2x.jpg 2x"
+                                        src="./img/offer/offer-3-mobile@1x.jpg" alt="двомісний номер">
+                                </picture>
+                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
+                                    <p class="swiper-slide-caption">"Say goodbye to dead spots, buffering, and dropped
+                                        calls. Get a consistently strong signal throughout your home so you
+                                        can stream, game, and work with confidence."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="offer__swiper-slide">
+                                <picture class="offer__img-wrapper offer__swiper-slide-item">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-4-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-4-mobile@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-4-mobile@1x.webp 1x,
+                                                        ./img/offer/offer-4-mobile@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-4-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-4-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-4-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-4-tablet@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-4-tablet@1x.jpg 1x,
+                                                        ./img/offer/offer-4-tablet@2x.jpg 2x" type="image/jpg">
+                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-4-tablet@1x.webp 1x,
+                                                        ./img/offer/offer-4-tablet@2x.webp 2x" type="image/webp">
+                                    <img class="offer__img" srcset="./img/offer/offer-4-mobile@1x.jpg 1x,
+                                                        ./img/offer/offer-4-mobile@2x.jpg 2x"
+                                        src="./img/offer/offer-4-mobile@1x.jpg" alt="двомісний номер">
+                                </picture>
+                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
+                                    <p class="swiper-slide-caption">Manage wifi for everyone at home right from the eero
+                                        app. Ongoing updates bring you the latest eero features while also
+                                        helping to keep your network safe and secure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn offer__btn" href="./products.html">Shop all eero systems</a>
             </div>
         </section>
         <section class="smart">
@@ -295,10 +458,7 @@
                     moreвЂ”without
                     the
                     need to buy separate smart home hubs for each.</p>
-                <button type="button" class="btn smart__btn">
-                    Learn More
-                </button>
-
+                <a class="btn smart__btn" href="./technology.html">Learn More</a>
                 <ul class="smart__swiper-pagination smart__box">
                     <li class="smart__box-item"> </li>
                     <li class="smart__box-item"> </li>
@@ -306,352 +466,11 @@
                 </ul>
             </div>
         </section>
-        <section class="advantages">
+        <section class="section help-center">
             <div class="container">
-                <h2 class="advantages__title">
-                    Give your home the connectivity it deserves.
-                </h2>
-                <p class="advantages__description">
-                    Say goodbye to dead spots, drop-offs, and buffering—even when the whole family is online. With eero,
-                    a simple and
-                    reliable connection is a given. Get a consistently strong signal for streaming, gaming, and working
-                    from every part of
-                    your home.
-                </p>
-                <picture>
-                    <source srcset="./img/adventages/adventages-mobile@1x.webp 1x,
-                                    ./img/adventages/adventages-mobile@2x.webp 2x" media="(max-width: 767px)"
-                        type="image/webp">
-                    <source srcset="./img/adventages/adventages-mobile@1x.jpg 1x,
-                                    ./img/adventages/adventages-mobile@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./img/adventages/adventages-tablet@1x.webp 1x,
-                                    ./img/adventages/adventages-tablet@2x.webp 2x" media="(max-width: 1439px)"
-                        type="image/webp">
-                    <source srcset="./img/adventages/adventages-tablet@1x.jpg 1x,
-                                    ./img/adventages/adventages-tablet@2x.jpg 2x" media="(max-width: 1439px)">
-                    <source srcset="./img/adventages/adventages-desktop@1x.webp 1x,
-                                    ./img/adventages/adventages-desktop@2x.webp 2x" media="(min-width: 1440px)"
-                        type="image/webp">
-                    <source srcset="./img/adventages/adventages-desktop@1x.jpg 1x,
-                                    ./img/adventages/adventages-desktop@2x.jpg 2x" media="(min-width: 1440px)">
-                    <img class="advantages__img" src="./img/adventages/adventages-mobile@1x.jpg"
-                        alt="Drawn people at home">
-                </picture>
-            </div>
-        </section>
-        <section class="true-mesh">
-            <div class="container">
-                <h2 class="true-mesh__title">TrueMesh covers your whole home.</h2>
-                <p class="true-mesh__description">TrueMesh learns the layout of your home to intelligently route traffic
-                    and optimize your wifi. eero 6 and eero Pro 6 are
-                    the first Wi-Fi 6 routers with eero’s TrueMesh technology.</p>
-                <button class="btn true-mesh__btn">See how it works</button>
-                <picture>
-                    <source srcset="./img/true-mesh/true-mesh-mobile@1x.webp 1x,
-                                    ./img/true-mesh/true-mesh-mobile@2x.webp 2x" media="(max-width: 767px)"
-                        type="image/webp">
-                    <source srcset="./img/true-mesh/true-mesh-mobile@1x.png 1x,
-                                    ./img/true-mesh/true-mesh-mobile@2x.png 2x" media="(max-width: 767px)">
-                    <source srcset="./img/true-mesh/true-mesh-tablet-medium@1x.webp 1x,
-                                    ./img/true-mesh/true-mesh-tablet-medium@2x.webp 2x" media="(max-width: 1023px)"
-                        type="image/webp">
-                    <source srcset="./img/true-mesh/true-mesh-tablet-medium@1x.png 1x,
-                                    ./img/true-mesh/true-mesh-tablet-medium@2x.png 2x" media="(max-width: 1023px)">
-                    <source srcset="./img/true-mesh/true-mesh-tablet@1x.webp 1x,
-                                    ./img/true-mesh/true-mesh-tablet@2x.webp 2x" media="(min-width: 1024px)"
-                        type="image/webp">
-                    <source srcset="./img/true-mesh/true-mesh-tablet@1x.png 1x,
-                                    ./img/true-mesh/true-mesh-tablet@2x.png 2x" media="(min-width: 1024px)">
-                    <img class="true-mesh__img" src="./img/true-mesh/true-mesh-mobile@1x.png"
-                        alt="Drawn people at home">
-                </picture>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <h2 class="about__title">Never worry about wifi again.</h2>
-                <ul class="about__list">
-                    <li class="about__item">
-                        <svg class="about__icon" width="79" height="79">
-                            <use href="./img/icons.svg#icon-fastandeasysetup"></use>
-                        </svg>
-                        <h3 class="about__subtitle">Fast and easy setup</h3>
-                        <p class="about__text">
-                            Unbox your eero devices, download the app, and start surfing the web
-                            in minutes. The eero app makes it easy to set up and manage wifi for
-                            everyone at home.
-                        </p>
-                        <a href="" class="about__link link">Check out the app</a>
-                    </li>
-                    <li class="about__item">
-                        <svg class="about__icon" width="79" height="79">
-                            <use href="./img/icons.svg#icon-advancednetworkprotection"></use>
-                        </svg>
-                        <h3 class="about__subtitle">Advanced network protection</h3>
-                        <p class="about__text">
-                            Every eero comes with world-class encryption and security protocols.
-                            Add on eero Secure to get even more protection with parental controls,
-                            ad blocking, and more.
-                        </p>
-                        <a href="" class="about__link link">Get eero secure</a>
-                    </li>
-                    <li class="about__item">
-                        <svg class="about__icon" width="79" height="79">
-                            <use href="./img/icons.svg#icon-alwaysgettingbetter"></use>
-                        </svg>
-                        <h3 class="about__subtitle">Always getting better</h3>
-                        <p class="about__text">
-                            eero automatically updates to bring you security patches, improved
-                            performance, and new features.
-                        </p>
-                        <a href="" class="about__link link">Read about eero update</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="selection">
-            <div class="container">
-                <h2 class="selection__title">Find your eero system</h2>
-                <div class="configurator">
-                    <ul class="configurator__counter">
-                        <li class="configurator__item configurator__item--current configurator__item--clickabled">
-                            <span class="configurator__dots configurator__dots--used">1</span>
-                        </li>
-                        <li class="configurator__item">
-                            <span class="configurator__dots">2</span>
-                        </li>
-                        <li class="configurator__item">
-                            <span class="configurator__dots">3</span>
-                        </li>
-                        <li class="configurator__item">
-                            <span class="configurator__dots">4</span>
-                        </li>
-                    </ul>
-                    <div class="configurator__box">
-                        <form action="#">
-                            <div class="configurator__page configurator__home" aria-expanded="false">
-                                <img class="configurator__img" src="./img/selection/home.svg" width="387" height="192"
-                                    alt="home">
-                                </img>
-                                <div class="configurator__controls">
-                                    <span class="configurator__caption">I have a</span>
-                                    <div class="configurator__group" role="group">
-                                        <label id="home-s" for="size-s" class="configurator__label">smaller
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="size" id="size-s">
-                                        <label id="home-m" for="size-m" class="configurator__label">medium
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="size" id="size-m">
-                                        <label id="home-l" for="size-l" class="configurator__label">larger
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="size" id="size-l">
-                                    </div>
-                                    <span class="configurator__caption">home</span>
-                                </div>
-                            </div>
-                            <div class="configurator__page configurator__gadjets visually-hidden" aria-expanded="false">
-                                <img class="configurator__img" src="./img/selection/gadjets.svg" width="185"
-                                    height="192" alt="gadjets">
-                                </img>
-                                <div class="configurator__controls">
-                                    <span class="configurator__caption">My home has</span>
-                                    <div class="configurator__group" role="group">
-                                        <label id="gadjets-s" for="count-s" class="configurator__label">less than 10
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="count" id="count-s">
-                                        <label id="gadjets-m" for="count-m" class="configurator__label">10 to 30
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="count" id="count-m">
-                                        <label id="gadjets-l" for="count-l" class="configurator__label">more than 30
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="count" id="count-l">
-                                    </div>
-                                    <span class="configurator__caption">connected devices</span>
-                                </div>
-                            </div>
-                            <div class="configurator__page configurator__speed visually-hidden" aria-expanded="false">
-                                <img class="configurator__img" src="./img/selection/speed.svg" width="192" height="192"
-                                    alt="speed">
-                                </img>
-                                <div class="configurator__controls">
-                                    <span class="configurator__caption">I need support for</span>
-                                    <div class="configurator__group" role="group">
-                                        <label id="speed-basic" for="speed-s" class="configurator__label">basic
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="speed" id="speed-s">
-                                        <label id="speed-fast" for="speed-m" class="configurator__label">fast
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="speed" id="speed-m">
-                                        <label id="speed-gigabit" for="speed-l" class="configurator__label">gigabit
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="speed" id="speed-l">
-                                    </div>
-                                    <span class="configurator__caption">speeds</span>
-                                </div>
-                            </div>
-                            <div class="configurator__page configurator__multiple visually-hidden"
-                                aria-expanded="false">
-                                <img class="configurator__img" src="./img/selection/multiple.svg" width="208"
-                                    height="192" alt="multiple">
-                                </img>
-                                <div class="configurator__controls">
-                                    <span class="configurator__caption">I</span>
-                                    <div class="configurator__group" role="group">
-                                        <label id="multiple-yes" for="multiple-y" class="configurator__label">have
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="size" id="multiple-y">
-                                        <label id="multiple-no" for="multiple-n" class="configurator__label">don`t have
-                                        </label>
-                                        <input class="visually-hidden" type="radio" name="size" id="multiple-n">
-                                    </div>
-                                    <span class="configurator__caption">an ethernet connection in multiple rooms</span>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="configurator__btn-wrapper">
-                            <button class="btn configurator__btn configurator__btn--preview visually-hidden"
-                                type="button">Preview</button>
-                            <button class="btn configurator__btn configurator__btn--next disabled"
-                                type="button">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="offer">
-            <div class="container offer__container">
-                <h1 class="offer__title">Turns out, people love great wifi.</h1>
-                <div class="offer__swiper-container">
-                    <div class="offer__swiper-pagination">
-                        <p class="offer__link offer__link--current link">Setup</p>
-                        <p class="offer__link link">Coverage</p>
-                        <p class="offer__link link">Reliability</p>
-                        <p class="offer__link link">Security</p>
-                        </li>
-                    </div>
-                    <div class="swiper-wrapper offer__swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="offer__swiper-slide">
-                                <picture class="offer__img-wrapper offer__swiper-slide-item">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-1-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-1-mobile@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-1-mobile@1x.webp 1x,
-                                                ./img/offer/offer-1-mobile@2x.webp 2x" type="image/webp">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-1-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-1-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-1-tablet@1x.webp 1x,
-                                                ./img/offer/offer-1-tablet@2x.webp 2x" type="image/webp">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-1-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-1-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-1-tablet@1x.webp 1x,
-                                                ./img/offer/offer-1-tablet@2x.webp 2x" type="image/webp">
-                                    <img class="offer__img" srcset="./img/offer/offer-1-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-1-mobile@2x.jpg 2x"
-                                        src="./img/offer/offer-1-mobile@1x.jpg" alt="двомісний номер">
-                                </picture>
-                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
-                                    <p class="swiper-slide-caption">"Setting up our eeros was a breeze thanks to the
-                                        plug
-                                        and play installation. The whole experience was life changing compared to other
-                                        routers we’ve used."</p>
-                                    <div class="offer__rankings">
-                                        <p class="offer__rankings-item">The Rankings</p>
-                                        <p class="offer__rankings-item">Seattle, WA | 4Bedroom house</p>
-                                        <p class="offer__rankings-item">3,300 sq. ft.</p>
-                                        <p class="offer__rankings-item">Use eero 3-pack</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="offer__swiper-slide">
-                                <picture class="offer__img-wrapper offer__swiper-slide-item">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-2-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-2-mobile@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-2-mobile@1x.webp 1x,
-                                                ./img/offer/offer-2-mobile@2x.webp 2x" type="image/webp">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-2-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-2-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-2-tablet@1x.webp 1x,
-                                                ./img/offer/offer-2-tablet@2x.webp 2x" type="image/webp">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-2-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-2-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-2-tablet@1x.webp 1x,
-                                                ./img/offer/offer-2-tablet@2x.webp 2x" type="image/webp">
-                                    <img class="offer__img" srcset="./img/offer/offer-2-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-2-mobile@2x.jpg 2x"
-                                        src="./img/offer/offer-2-mobile@1x.jpg" alt="двомісний номер">
-                                </picture>
-                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
-                                    <p class="swiper-slide-caption">
-                                        "Eero’s mesh technology uses multiple wifi devices to
-                                        blanket your whole home in coverage. With the right system for your home, you
-                                        can work, stream, game, and chat—without missing a beat."
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="offer__swiper-slide">
-                                <picture class="offer__img-wrapper offer__swiper-slide-item">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-3-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-3-mobile@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-3-mobile@1x.webp 1x,
-                                                ./img/offer/offer-3-mobile@2x.webp 2x" type="image/webp">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-3-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-3-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-3-tablet@1x.webp 1x,
-                                                ./img/offer/offer-3-tablet@2x.webp 2x" type="image/webp">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-3-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-3-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-3-tablet@1x.webp 1x,
-                                                ./img/offer/offer-3-tablet@2x.webp 2x" type="image/webp">
-                                    <img class="offer__img" srcset="./img/offer/offer-3-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-3-mobile@2x.jpg 2x"
-                                        src="./img/offer/offer-3-mobile@1x.jpg" alt="двомісний номер">
-                                </picture>
-                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
-                                    <p class="swiper-slide-caption">"Say goodbye to dead spots, buffering, and dropped
-                                        calls. Get a consistently strong signal throughout your home so you
-                                        can stream, game, and work with confidence."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="offer__swiper-slide">
-                                <picture class="offer__img-wrapper offer__swiper-slide-item">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-4-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-4-mobile@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 959px)" srcset="./img/offer/offer-4-mobile@1x.webp 1x,
-                                                ./img/offer/offer-4-mobile@2x.webp 2x" type="image/webp">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-4-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-4-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(max-width: 1439px)" srcset="./img/offer/offer-4-tablet@1x.webp 1x,
-                                                ./img/offer/offer-4-tablet@2x.webp 2x" type="image/webp">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-4-tablet@1x.jpg 1x,
-                                                ./img/offer/offer-4-tablet@2x.jpg 2x" type="image/jpg">
-                                    <source media="(min-width: 1440px)" srcset="./img/offer/offer-4-tablet@1x.webp 1x,
-                                                ./img/offer/offer-4-tablet@2x.webp 2x" type="image/webp">
-                                    <img class="offer__img" srcset="./img/offer/offer-4-mobile@1x.jpg 1x,
-                                                ./img/offer/offer-4-mobile@2x.jpg 2x"
-                                        src="./img/offer/offer-4-mobile@1x.jpg" alt="двомісний номер">
-                                </picture>
-                                <div class="offer__swiper-slide-wrapper offer__swiper-slide-item">
-                                    <p class="swiper-slide-caption">Manage wifi for everyone at home right from the eero
-                                        app. Ongoing updates bring you the latest eero features while also
-                                        helping to keep your network safe and secure.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn offer__btn">Shop all eero systems</button>
-            </div>
-        </section>
-        <section class="help-center">
-            <div class="container">
-                <h2 class="help-center__title">The experts are in.</h2>
-                <p class="help-center__caption">Our team is just a (toll-free) phone call, email, or tweet away.</p>
+                <h2 class="section__title help-center__title">The experts are in.</h2>
+                <p class="section__description help-center__description">Our team is just a (toll-free) phone call,
+                    email, or tweet away.</p>
                 <button class="btn help-center__btn" type="button">Help center</button>
                 <ul class="help-center__services">
                     <li class="help-center__item">
@@ -681,106 +500,176 @@
                 </ul>
             </div>
         </section>
-        <section class="stay-connected">
+        <section class="section stay-connected">
             <div class="container">
-                <h2 class="stay-connected__title">Stay connected with fast, reliable, whole-home wifi.</h2>
+                <h2 class="section__title stay-connected__title">Stay connected with fast, reliable, whole-home wifi.
+                </h2>
                 <button class="btn stay-connected__btn" type="button">Goodbye dead spots</button>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container footer__container">
-                <a class="logo footer__logo" href="./index.html">
-                    <svg class="footer__logo-icon" width="86" height="39">
-                        <use href="./img/icons.svg#icon-mainlogo"></use>
-                    </svg>
-                </a>
-                <div class="footer__box-wrapper">
-                    <div class="footer__nav-box">
-                        <ul class="footer__nav">
-                            <li class="footer__items">Products</li>
-                            <li class="footer__items">How it works</li>
-                            <li class="footer__items">Technology</li>
-                            <li class="footer__items">eero Secure</li>
-                            <li class="footer__items">Support</li>
-                            <li class="footer__items">Find Your System</li>
-                            <li class="footer__items">Cookie preferences</li>
-                        </ul>
-                        <ul class="footer__nav">
-                            <li class="footer__items">Shop</li>
-                            <li class="footer__items">Careers</li>
-                            <li class="footer__items">Blog</li>
-                            <li class="footer__items">Media room</li>
-                            <li class="footer__items">Legal</li>
-                            <li class="footer__items">Custom installer</li>
-                            <li class="footer__items">Where to buy</li>
-                            <li class="footer__items">eero for Service Providers</li>
-                        </ul>
-                    </div>
-                    <div class="footer__form-box">
-                        <p class="footer__caption">Connect with us</p>
-                        <p class="footer__text">For the latest eero news and promotions.</p>
-                        <form class="footer__form">
-                            <label class="footer-form__field">
-                                <input class="footer-form__input" type="text" name="email" id="email"
-                                    placeholder="E-mail" />
-                            </label>
-                            <button type="submit" class="btn footer-btn">
-                                submit
-                            </button>
-                        </form>
-                    </div>
-                    <ul class="socials footer__socials">
-                        <li>
-                            <a href="" class="social-link">
-                                <svg class="social-media__icon" width="30" height="30">
-                                    <use href="./img/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="logo footer__logo" href="./index.html">
+                <svg class="footer__logo-icon" width="86" height="39">
+                    <use href="./img/icons.svg#icon-mainlogo"></use>
+                </svg>
+            </a>
+            <div class="footer__box-wrapper">
+                <div class="footer__nav-box">
+                    <ul class="footer__nav">
+                        <li class="footer__items">
+                            <a class="footer__nav-link" href="./products.html">Products</a>
                         </li>
-                        <li>
-                            <a href="" class="social-link">
-                                <svg class="social-media__icon" width="30" height="30">
-                                    <use href="./img/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
+                        <li class="footer__items">
+                            <a class="footer__nav-link" href="./technology.html">How it works</a>
                         </li>
-                        <li>
-                            <a href="" class="social-link">
-                                <svg class="social-media__icon" width="30" height="30">
-                                    <use href="./img/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
+                        <li class="footer__items"><a class="footer__nav-link" href="./eero-Secure.html">Secure</a>
                         </li>
-                        <li>
-                            <a href="" class="social-link">
-                                <svg class="social-media__icon" width="30" height="30">
-                                    <use href="./img/icons.svg#icon-pinterest"></use>
-                                </svg>
-                            </a>
+                        <li class="footer__items"><a class="footer__nav-link" href="./configurator.html">Find Your
+                                System</a>
                         </li>
-                        <li>
-                            <a href="" class="social-link">
-                                <svg class="social-media__icon" width="30" height="30">
-                                    <use href="./img/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
+                        <li class="footer__items">
+                            <a class="footer__nav-link" href="https://support.eero.com/hc/en-us" target="_blank"
+                                rel="noopener noreferrer">Support</a>
+                        </li>
+                        <li class="footer__items"><a class="footer__nav-link"
+                                href="https://www.amazon.com/stores/page/FC890135-A1A9-499D-91A1-860E8614C254?channel=eero_homepage"
+                                target="_blank" rel="noopener noreferrer">Shop on Amazon</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Cookie preferences</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Careers</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Blog</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Media room</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">Legal</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">For Business</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">For Pro installers</a></li>
+                        <li class="footer__items"><a class="footer__nav-link" href="#">For Service Providers</a>
                         </li>
                     </ul>
-                    <p class="footer-copyright">
-                        &copy;2021 EERO LLC, SAN FRANCISCO, CA
-                    </p>
                 </div>
+                <div class="footer__form-box">
+                    <p class="footer__caption">Connect with us</p>
+                    <p class="footer__text">For the latest eero news and promotions.</p>
+                    <form class="footer__form">
+                        <label class="footer-form__field">
+                            <input class="footer-form__input" type="text" name="email" id="email"
+                                placeholder="E-mail" />
+                        </label>
+                        <button type="submit" class="btn footer-btn">
+                            submit
+                        </button>
+                    </form>
+                </div>
+                <ul class="socials footer__socials">
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-pinterest"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="social-link">
+                            <svg class="social-media__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer-copyright">
+                    &copy;2021 EERO LLC, SAN FRANCISCO, CA
+                </p>
             </div>
-        </footer>
-    </main>
-    <script defer src="./js/configurator.js"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+        </div>
+    </footer>
+    <div class="backdrop is-hidden" aria-modal="false">
+        <div class="modal modal--eero6">
+            <button class="modal__btn-close" type="button">
+                <svg width="30" height="30">
+                    <use href="./img/icons.svg#icon-btn-close"></use>
+                </svg>
+            </button>
+            <form action="" class="modal__form">
+                <div class="modal__box-wrapper">
+                    <p class="modal__caption">Change your product:</p>
+                    <div class="modal__box-chckbox" role="group">
+                        <label class="modal__field">
+                            <p class="modal__element modal__element--a">1-Pack</p>
+                            <p class="modal__element modal__element--b">1 router</p>
+                            <input class="visually-hidden" type="radio" name="product">
+                        </label>
+                        <label class="modal__field">
+                            <p class="modal__element modal__element--a">2-Pack</p>
+                            <p class="modal__element modal__element--b">1 router + 1 Add-On</p>
+                            <input class="visually-hidden" type="radio" name="product">
+                        </label>
+                        <label class="modal__field">
+                            <p class="modal__element modal__element--a">3-Pack</p>
+                            <p class="modal__element modal__element--b">1 router + 2 Add-Ons</p>
+                            <input class="visually-hidden" type="radio" name="product">
+                        </label>
+                    </div>
+                    <div class="modal__box-text">
+                        <svg class="modal__logo-icon" width="86" height="39">
+                            <use href="./img/icons.svg#icon-mainlogo"></use>
+                        </svg>
+                        <ul class="modal__text-wrapper">
+                            <li class="modal__text-element">
+                                <p class="modal__text modal__text--dot">&#x2022;</p>
+                                <p class="modal__text">Supports speeds up to 900 Mbps</p>
+                            </li>
+                            <li class="modal__text-element">
+                                <p class="modal__text modal__text--dot">&#x2022;</p>
+                                <p class="modal__text">Enough bandwidth for 75+ connected devices and covers up to
+                                    1,500 sq. ft.</p>
+                            </li>
+                            <li class="modal__text-element">
+                                <p class="modal__text modal__text--dot">&#x2022;</p>
+                                <p class="modal__text">Built-in Zigbee smart home hub</p>
+                            </li>
+                        </ul>
+                        <p class="eero-icon">Wi-Fi 6</p>
+                    </div>
+                    <div class="modal__price-wrapper">
+                        <p class="modal__price">$ 175</p>
+                        <button class="btn modal__btn" type="button">Add to cart</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer src="./js/scroll.js" type="module"></script>
+    <script defer src="./js/mobile-menu.js" type="module"></script>
     <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
+    <script defer src="./js/modal.js" type="module"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/slider.js" type="module"></script>
 </body>
 
 </html>
