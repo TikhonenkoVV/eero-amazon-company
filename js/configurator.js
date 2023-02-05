@@ -1,138 +1,164 @@
-'use strict';
 (() => {
-    const $d = document;
-    const pages = $d.querySelectorAll('.configurator__page');
-    const pageHome = $d.querySelector('.configurator__home');
-    const arrHome = pageHome.querySelectorAll('.configurator__label');
-    const pageGadjets = $d.querySelector('.configurator__gadjets');
-    const arrGadjets = pageGadjets.querySelectorAll('.configurator__label');
-    const pageSpeed = $d.querySelector('.configurator__speed');
-    const arrSpeed = pageSpeed.querySelectorAll('.configurator__label');
-    const pageMultiple = $d.querySelector('.configurator__multiple');
-    const arrMultiple = pageMultiple.querySelectorAll('.configurator__label');
-
-    const nextBtn = $d.querySelector('.configurator__btn--next');
-    const prevBtn = $d.querySelector('.configurator__btn--preview');
-    const configuratorCounter = $d.documentElement.querySelector('.configurator__counter');
-    const configuratorItem = configuratorCounter.querySelectorAll('.configurator__item');
-
-    let pageCounter = 0;
-    let curPage = pageHome;
-    let nextPage;
-    let prevPage;
-    let IsCurPageActive;
-
-    function setCurrentDots(num) {
-        configuratorItem.forEach(el => {
-            el.classList.remove('configurator__item--current');
-        });
-        configuratorCounter.children[num].classList.add(
-            'configurator__item--current',
-            'configurator__item--clickabled'
-        );
-    }
-
-    function pageParam(num) {
-        pages.forEach(el => {
-            el.classList.add('visually-hidden');
-        });
-        curPage = $d.querySelector(`.configurator__${strFoo(num)}`);
-        curPage.classList.remove('visually-hidden');
-        nextPage = num === 0 ? undefined : $d.querySelector(`.configurator__${strFoo(num + 1)}`);
-        prevPage = num === 3 ? undefined : $d.querySelector(`.configurator__${strFoo(num - 1)}`);
-        IsCurPageActive = curPage.getAttribute('aria-expanded') === 'true' ? true : false;
-        if (!IsCurPageActive) {
-            nextBtn.classList.add('disabled');
-        } else nextBtn.classList.remove('disabled');
-        if (num === 0) {
-            prevBtn.classList.add('visually-hidden');
-        } else prevBtn.classList.remove('visually-hidden');
-        setCurrentDots(num);
-        nextBtn.innerHTML = num === 3 ? 'show result' : 'next';
-    }
-
-    Array.from(configuratorItem, el => {
-        el.addEventListener('click', element => {
-            if (element.target.tagName !== 'SPAN') return false;
-            const contains = element.currentTarget.classList.contains(
-                'configurator__item--clickabled'
-            );
-            if (contains) {
-                const num = Number(element.target.innerHTML) - 1;
-                if (num !== pageCounter) {
-                    pageCounter = num;
-                    pageParam(pageCounter);
-                }
-            }
-        });
-    });
-
-    function strFoo(num) {
-        let pageClass;
-        switch (num) {
-            case 1:
-                pageClass = 'gadjets';
-                break;
-            case 2:
-                pageClass = 'speed';
-                break;
-            case 3:
-                pageClass = 'multiple';
-                break;
-            default:
-                pageClass = 'home';
-                break;
-        }
-        return pageClass;
-    }
-
-    const arrayPages = function (arr) {
-        let str;
-        const curPage = arr[0].parentElement.parentElement.parentElement;
-        const curImg = curPage.querySelector('.configurator__img');
-        let defaultSr = curImg.src;
-        Array.from(arr, lbl => {
-            lbl.addEventListener('mouseover', event => {
-                let lblId = event.target.getAttribute('id');
-                str = `./img/selection/${lblId}.svg`;
-                curImg.src = str;
-            });
-            lbl.addEventListener('click', element => {
-                arr.forEach(el => {
-                    el.classList.remove('configurator__label--current');
-                });
-                element.target.classList.add('configurator__label--current');
-                curImg.src = str;
-                defaultSr = str;
-                nextBtn.classList.remove('disabled');
-                curPage.setAttribute('aria-expanded', true);
-            });
-            lbl.addEventListener('mouseout', event => {
-                curImg.src = defaultSr;
-            });
-        });
+    const refs = {
+        inputsGroups: document.querySelectorAll('.configurator__group'),
+        nextBtn: document.querySelector('.configurator__btn--next'),
+        prevBtn: document.querySelector('.configurator__btn--preview'),
+        configuratorImg: document.querySelector('.configurator__img'),
+        span: document.querySelectorAll('.configurator__caption'),
+        pagination: document.querySelectorAll('.configurator__item'),
     };
 
-    arrayPages(arrHome);
-    arrayPages(arrGadjets);
-    arrayPages(arrSpeed);
-    arrayPages(arrMultiple);
+    let pageCounter = 0;
+    let path = './img/selection/';
 
-    nextBtn.addEventListener('click', next => {
-        const IsDisabled = nextBtn.classList.contains('disabled');
-        if (!IsDisabled && pageCounter < 3) {
-            pageCounter += 1;
-            pageParam(pageCounter);
-            configuratorCounter.children[pageCounter].children[0].classList.add(
-                'configurator__dots--used'
-            );
+    const controlsData = {
+        labels: {
+            home: ['home-s', 'home-m', 'home-l'],
+            gadjets: ['gadjets-s', 'gadjets-m', 'gadjets-l'],
+            speed: ['speed-s', 'speed-m', 'speed-l'],
+            multiple: ['multiple-yes', 'multiple-no'],
+        },
+        str: {
+            home: ['I have a', 'home'],
+            gadjets: ['My home has', 'connected devices'],
+            speed: ['I need support for', 'speed'],
+            multiple: ['I', 'an ethernet connection in multiple rooms'],
+        },
+        srcSet: {
+            home: ['home-s.svg', 'home-m.svg', 'home-l.svg'],
+            gadjets: ['gadjets-s.svg', 'gadjets-m.svg', 'gadjets-l.svg'],
+            speed: ['speed-s.svg', 'speed-m.svg', 'speed-l.svg'],
+            multiple: ['multiple-yes.svg', 'multiple-no.svg'],
+            default: ['home.svg', 'gadjets.svg', 'speed.svg', 'multiple.svg'],
+        },
+    };
+
+    const pageData = currGroup => {
+        refs.configuratorImg.src = path + controlsData.srcSet.default[pageCounter];
+        const curStr = controlsData.str[currGroup.id];
+        refs.span.forEach((e, index) => (e.textContent = curStr[index]));
+        currGroup.classList.remove('visually-hidden');
+        const IsCurPageActive = currGroup.getAttribute('aria-expanded') === 'true' ? true : false;
+        if (!IsCurPageActive ? (refs.nextBtn.disabled = true) : (refs.nextBtn.disabled = false));
+        changePages();
+        refs.pagination.forEach(el => {
+            if (el.classList.contains('current')) {
+                el.classList.remove('current');
+            }
+        });
+        const currPagination = refs.pagination[pageCounter];
+        if (!currPagination.classList.contains('current')) {
+            currPagination.classList.add('current');
         }
-    });
+        if (!currPagination.classList.contains('clickabled')) {
+            currPagination.classList.add('clickabled');
+        }
+        if (!currPagination.firstElementChild.classList.contains('used')) {
+            currPagination.firstElementChild.classList.add('used');
+        }
+    };
 
-    prevBtn.addEventListener('click', preview => {
+    const changePages = () => {
+        if (
+            pageCounter === 3
+                ? (refs.nextBtn.textContent = 'show result')
+                : (refs.nextBtn.textContent = 'next')
+        );
+        if (pageCounter === 0) {
+            if (!refs.prevBtn.classList.contains('visually-hidden')) {
+                refs.prevBtn.classList.add('visually-hidden');
+            }
+        }
         if (pageCounter > 0) {
-            pageCounter -= 1;
-            pageParam(pageCounter);
+            if (refs.prevBtn.classList.contains('visually-hidden')) {
+                refs.prevBtn.classList.remove('visually-hidden');
+            }
         }
+    };
+
+    const onNextBtnClick = () => {
+        if (pageCounter === 3) {
+            return;
+        }
+        pageCounter += 1;
+        refs.inputsGroups[pageCounter - 1].classList.add('visually-hidden');
+        const currGroup = refs.inputsGroups[pageCounter];
+        pageData(currGroup);
+        changePages();
+    };
+
+    const onPrevBtnClick = event => {
+        pageCounter -= 1;
+        refs.inputsGroups[pageCounter + 1].classList.add('visually-hidden');
+        const currGroup = refs.inputsGroups[pageCounter];
+        pageData(currGroup);
+        changePages();
+    };
+
+    const onLabelClick = e => {
+        if (e.target.tagName !== 'LABEL') {
+            return;
+        }
+        const elements = e.currentTarget.querySelectorAll('.configurator__label');
+        elements.forEach(el => {
+            if (el.classList.contains('configurator__label--current')) {
+                el.classList.remove('configurator__label--current');
+            }
+        });
+        e.target.classList.add('configurator__label--current');
+        if (e.currentTarget.ariaExpanded === 'false') {
+            e.currentTarget.ariaExpanded = 'true';
+        }
+        refs.nextBtn.disabled = false;
+        const currTargetIndex = Object.keys(controlsData.labels).indexOf(e.currentTarget.id);
+        const indexImg = controlsData.labels[e.currentTarget.id].indexOf(e.target.id);
+        const currTargetImg = controlsData.srcSet[e.currentTarget.id][indexImg];
+        controlsData.srcSet.default.splice(currTargetIndex, 1, currTargetImg);
+    };
+
+    const onLabelMouseOver = e => {
+        if (e.target.tagName !== 'LABEL') {
+            return;
+        }
+        const indexImg = controlsData.labels[e.currentTarget.id].indexOf(e.target.id);
+        const currTargetImg = path + controlsData.srcSet[e.currentTarget.id][indexImg];
+        refs.configuratorImg.src = currTargetImg;
+    };
+
+    const onLabelMouseOut = e => {
+        if (e.target.tagName !== 'LABEL') {
+            return;
+        }
+        const currTargetIndex = Object.keys(controlsData.labels).indexOf(e.currentTarget.id);
+        const currTargetImg = path + controlsData.srcSet.default[currTargetIndex];
+        refs.configuratorImg.src = currTargetImg;
+    };
+
+    const onPaginationClick = e => {
+        if (!e.currentTarget.classList.contains('clickabled')) {
+            return;
+        }
+        const index = Number(e.currentTarget.textContent) - 1;
+        pageCounter = index;
+        refs.inputsGroups.forEach(el => {
+            if (!el.classList.contains('visually-hidden')) {
+                el.classList.add('visually-hidden');
+            }
+        });
+        const currGroup = refs.inputsGroups[index];
+        pageData(currGroup);
+        changePages();
+    };
+
+    refs.nextBtn.addEventListener('click', onNextBtnClick);
+
+    refs.prevBtn.addEventListener('click', onPrevBtnClick);
+
+    Array.from(refs.inputsGroups, group => {
+        group.addEventListener('click', onLabelClick);
+        group.addEventListener('mouseover', onLabelMouseOver);
+        group.addEventListener('mouseout', onLabelMouseOut);
     });
+
+    Array.from(refs.pagination, el => el.addEventListener('click', onPaginationClick));
 })();

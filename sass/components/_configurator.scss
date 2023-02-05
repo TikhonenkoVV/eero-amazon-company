@@ -24,10 +24,10 @@
     gap: 10px;
     width: 24px;
     height: 24px;
-    &--current {
+    &.current {
         border: 1px solid $colorSquareGreen;
     }
-    &--clickabled {
+    &.clickabled {
         cursor: pointer;
     }
     &:not(:last-child):after {
@@ -51,7 +51,7 @@
     color: $colorTextWhite;
     @include font(400, 14px, calc(23 / 14), 0.10998px);
     background-color: $colorPrimaryGray;
-    &--used {
+    &.used {
         background-color: $colorSquareGreen;
     }
 }
@@ -135,7 +135,7 @@
     background-color: $colorAccent;
 }
 
-.configurator__btn.disabled {
+.configurator__btn:disabled {
     background-color: $colorPrimaryGray;
     cursor: not-allowed;
 }
